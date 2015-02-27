@@ -19,7 +19,7 @@ FPSClock = FPS.fpsClock
 #FPS = FPS.fps
 
 # Load Images
-bg = pygame.image.load("fuckinghellwhattheshit.jpg")
+bg = pygame.image.load("Background.jpg")
 chr1 = pygame.image.load("Chris1.png")
 chr2 = pygame.image.load("Chris2.png")
 chr3 = pygame.image.load("Chris3.png")
