@@ -1,15 +1,36 @@
 __author__ = 'Toby'
 
 import pygame
+import net.Toby.GSM.Display.Display as Display
+import random
 
 pygame.init()
 
-reel1_list = [1, 2, 3, 4, 5]
-reel2_list = [1, 2, 3, 4, 5]
-reel3_list = [1, 2, 3, 4, 5]
+class Reel(pygame.sprite.Sprite):
 
-reelMove = [1, 1, 1]
+    def __init__(self, reelGroup, reelnumber):
+        self.reelGroup = reelGroup
 
-reel1_group = pygame.sprite.Group()
-reel2_group = pygame.sprite.Group()
-reel3_group = pygame.sprite.Group()
+        self.reelList = [1, 2, 3, 4, 5]
+        self.reelMove = 1
+        self.reelNudge = 0
+        self.stopTime = (240 + (60 * (random.randint(1,6) + reelnumber)))
+
+    def stopReel(self):
+        self.reelMove = 0
+
+    def nudgeReel(self):
+        self.reelMove = 1
+        self.reelNudge = 1
+
+    def update(self):
+        if self.stopTime > 0:
+            self.stopTime -= 1
+            self.reelGroup.update()
+        else:
+            self.stopReel()
+        if self.reelNudge == 1:
+            self.reelMove = 0
+
+    def draw(self):
+        self.reelGroup.draw(Display.screen)
