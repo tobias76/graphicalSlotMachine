@@ -106,7 +106,7 @@ class fruitMachine():
                     reelGroup3.update()
                 if self.stop[0] == self.stop[1] == self.stop[2] == 1 and self.end == 0:
                     if self.fruitlist[0][2] == self.fruitlist[1][2] == self.fruitlist[2][2]:
-                        self.message = "you're winner"
+                        self.message = "Congratulations, you have won 0/"
                         if self.fruitlist[0][2] == 1:
                             self.credits += 1
                         if self.fruitlist[0][2] == 2:
@@ -122,8 +122,9 @@ class fruitMachine():
                 reelGroup1.draw(Display.screen)
                 reelGroup2.draw(Display.screen)
                 reelGroup3.draw(Display.screen)
-                font.render_to(Display.screen, (5,550), self.message, (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, ptsize = 42)
-                font.render_to(Display.screen, (5,5), ("Credits: " + str(self.credits)), (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, ptsize = 72)
+                font.render_to(Display.screen, (5,550), self.message, (random.randint(0,255),random.randint(0,255),random.randint(0,255),255),
+                               None, rotation = 0, ptsize = 42)
+                font.render_to(Display.screen, (5,5), ("Credits: " + str(self.credits)), (random.randint(0,255),random.randint(0,255), random.randint(0,255),255), None, rotation = 0, ptsize = 72)
 
                 #if self.credits > 0 and self.start != "9":
                 #    self.spinReel()

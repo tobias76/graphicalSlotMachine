@@ -2,6 +2,7 @@ __author__ = 'Toby'
 
 import pygame
 import pygame.freetype
+from pygame.locals import *
 
 import sys
 import random
