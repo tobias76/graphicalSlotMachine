@@ -24,23 +24,7 @@ class Machine():
         self.font = "Read Todo" #TODO: Add font
         self.fruitMachine()
 
-    def fruitMachine(self):
-        while True:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
 
-            # TODO: Add screen blits
-
-            if self.credits > 0 and self.start != "9":
-                self.spinReel()
-                self.startReel()
-                self.stopReel()
-                self.winnings()
-
-            FPS.fpsClock.tick(FPS)
-            pygame.display.update()
 
     def spinReel(self):
         if Reels.reelMove[0] == 1:
