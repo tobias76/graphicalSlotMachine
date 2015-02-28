@@ -1,26 +1,24 @@
 __author__ = 'MC Ride'
 
 import pygame
+from pygame.locals import *
+import pygame.freetype
 
 import net.Toby.GSM.Display.Display as Display
 import net.Toby.GSM.Util.FPS as FPS
 import net.Toby.GSM.Fruit as Fruit
 import net.Toby.GSM.Reels as Reels
 import net.Toby.GSM.Machine as Machines
-from pygame.locals import *
-import pygame.freetype
 
-import sys, random
+import sys
+import random
 
 pygame.init()
 
-Display.screen
-
 FPSClock = FPS.fpsClock
-#FPS = FPS.fps
 
 # Load Images
-bg = pygame.image.load("Background.jpg")
+bg = pygame.image.load("Assets/Background.jpg")
 chr1 = pygame.image.load("Chris1.png")
 chr2 = pygame.image.load("Chris2.png")
 chr3 = pygame.image.load("Chris3.png")
@@ -36,6 +34,7 @@ reel3 = Reels.Reel(reelGroup3, 3)
 
 # Load Fonts
 font = pygame.freetype.Font("sans.ttf")
+
 
 class fruitMachine():
     def __init__(self):
@@ -59,18 +58,16 @@ class fruitMachine():
                     self.end = 0
                     self.message = ""
 
-                # TODO: Add screen blits
-
                 Display.screen.blit(bg, (0, 0))
                 pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
                 Display.screen.blit(chr1, (600, 130))
-                font.render_to(Display.screen, (680,130), "1", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, ptsize = 48)
+                font.render_to(Display.screen, (680,130), "1", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, size = 48)
                 Display.screen.blit(chr2, (600, 230))
-                font.render_to(Display.screen, (680,230), "3", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, ptsize = 48)
+                font.render_to(Display.screen, (680,230), "3", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, size = 48)
                 Display.screen.blit(chr3, (600, 330))
-                font.render_to(Display.screen, (680,330), "5", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, ptsize = 48)
+                font.render_to(Display.screen, (680,330), "5", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, size = 48)
                 Display.screen.blit(chr4, (600, 430))
-                font.render_to(Display.screen, (680,430), "10", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, ptsize = 48)
+                font.render_to(Display.screen, (680,430), "10", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, size = 48)
                 self.counter += 1
                 if self.counter == 10:
                     if reel1.reelMove == 1 and (reel1.stopTime) % 10:
@@ -110,12 +107,15 @@ class fruitMachine():
                 reel1.draw()
                 reel2.draw()
                 reel3.draw()
-                font.render_to(Display.screen, (5,550), self.message, (random.randint(0,255),random.randint(0,255),random.randint(0,255),255),
-                               None, rotation = 0, ptsize = 42)
-                font.render_to(Display.screen, (5,5), ("Credits: " + str(self.credits)), (random.randint(0,255),random.randint(0,255), random.randint(0,255),255), None, rotation = 0, ptsize = 72)
+
+                font.render_to(Display.screen, (5, 550), self.message, (random.randint(0, 255), random.randint(0 , 255), random.randint(0, 255),255),
+                               None, rotation=0, size=42)
+                font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)), (random.randint(0, 255),
+                                                                                          random.randint(0, 255), random.randint(0, 255), 255), None, rotation=0, size = 72)
 
                 FPS.fpsClock.tick(FPS.fps)
                 pygame.display.update()
+
             while self.credits == 0:
                 print("Please enter a credit.")
                 for event in pygame.event.get():
