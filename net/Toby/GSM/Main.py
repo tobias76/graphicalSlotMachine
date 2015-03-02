@@ -13,12 +13,16 @@ import net.Toby.GSM.Machine as Machines
 import sys
 import random
 
+verMaj = sys.version_info.major
+verMinor = sys.version_info.minor
+verMicro = sys.version_info.micro
+
 pygame.init()
 
 FPSClock = FPS.fpsClock
 
 # Load Images
-bg = pygame.image.load("Assets/Background.jpg")
+bg = pygame.image.load("Background.jpg")
 chr1 = pygame.image.load("Chris1.png")
 chr2 = pygame.image.load("Chris2.png")
 chr3 = pygame.image.load("Chris3.png")
@@ -58,16 +62,41 @@ class fruitMachine():
                     self.end = 0
                     self.message = ""
 
-                Display.screen.blit(bg, (0, 0))
-                pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
-                Display.screen.blit(chr1, (600, 130))
-                font.render_to(Display.screen, (680,130), "1", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, size = 48)
-                Display.screen.blit(chr2, (600, 230))
-                font.render_to(Display.screen, (680,230), "3", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, size = 48)
-                Display.screen.blit(chr3, (600, 330))
-                font.render_to(Display.screen, (680,330), "5", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, size = 48)
-                Display.screen.blit(chr4, (600, 430))
-                font.render_to(Display.screen, (680,430), "10", (random.randint(0,255),random.randint(0,255),random.randint(0,255),255), None, rotation = 0, size = 48)
+                if verMinor == 4:
+                    Display.screen.blit(bg, (0, 0))
+                    pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
+                    Display.screen.blit(chr1, (600, 130))
+                    font.render_to(Display.screen, (680,130), "1", (random.randint(0,255),random.randint(0, 255) ,
+                                                                    random.randint(0,255),255), None, rotation=0, size=48)
+                    Display.screen.blit(chr2, (600, 230))
+                    font.render_to(Display.screen, (680,230), "3", (random.randint(0,255),random.randint(0, 255) ,
+                                                                    random.randint(0,255),255), None, rotation=0, size=48)
+                    Display.screen.blit(chr3, (600, 330))
+                    font.render_to(Display.screen, (680,330), "5", (random.randint(0,255),random.randint(0, 255),
+                                                                    random.randint(0,255),255), None, rotation=0, size=48)
+                    Display.screen.blit(chr4, (600, 430))
+                    font.render_to(Display.screen, (680,430), "10", (random.randint(0,255),random.randint(0, 255) ,
+                                                                     random.randint(0,255),255), None, rotation=0, size=48)
+                elif verMinor == 3:
+                    Display.screen.blit(bg, (0, 0))
+                    pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
+                    Display.screen.blit(chr1, (600, 130))
+                    font.render_to(Display.screen, (680,130), "1", (random.randint(0,255),random.randint(0,255),
+                                                                    random.randint(0,255),255), None, rotation=0,
+                                   ptsize =48)
+                    Display.screen.blit(chr2, (600, 230))
+                    font.render_to(Display.screen, (680,230), "3", (random.randint(0,255),random.randint(0,255),
+                                                                    random.randint(0,255),255), None, rotation=0,
+                                   ptsize=48)
+                    Display.screen.blit(chr3, (600, 330))
+                    font.render_to(Display.screen, (680, 330), "5", (random.randint(0, 255), random.randint(0,255),
+                                                                     random.randint(0, 255), 255), None, rotation=0,
+                                   ptsize=48)
+                    Display.screen.blit(chr4, (600, 430))
+                    font.render_to(Display.screen, (680, 430), "10", (random.randint(0, 255), random.randint(0, 255),
+                                                                      random.randint(0, 255), 255), None, rotation=0,
+                                   size=48)
+
                 self.counter += 1
                 if self.counter == 10:
                     if reel1.reelMove == 1 and (reel1.stopTime) % 10:
@@ -117,7 +146,7 @@ class fruitMachine():
                 pygame.display.update()
 
             while self.credits == 0:
-                print("Please enter a credit.")
+                #print("Please enter a credit.")
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
                         pygame.quit()
