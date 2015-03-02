@@ -1,20 +1,23 @@
 __author__ = 'Toby'
 
-import pygame
-import net.Toby.GSM.Display.Display as Display
 import random
+
+import pygame
+
+import net.Toby.GSM.Display.Display as Display
+
 
 pygame.init()
 
-class Reel(pygame.sprite.Sprite):
 
+class Reel(pygame.sprite.Sprite):
     def __init__(self, reelGroup, reelnumber):
         self.reelGroup = reelGroup
 
         self.reelList = [1, 2, 3, 4, 5]
         self.reelMove = 1
         self.reelNudge = 0
-        self.stopTime = (240 + (60 * (random.randint(1,6) + reelnumber)))
+        self.stopTime = (240 + (60 * (random.randint(1, 6) + reelnumber)))
 
     def stopReel(self):
         self.reelMove = 0

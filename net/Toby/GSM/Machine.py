@@ -1,18 +1,16 @@
 __author__ = 'Toby'
 
+import random
+
 import pygame
 import pygame.freetype
 from pygame.locals import *
 
-import sys
-import random
-
 from net.Toby.GSM.Display import Display as Display
 from net.Toby.GSM.Util import Colours as Colours
-from net.Toby.GSM.Util import FPS as FPS
 from net.Toby.GSM import Reels as Reels
-
 import net.Toby.GSM.Fruit as Fruit
+
 
 pygame.init()
 
@@ -22,9 +20,8 @@ class Machine():
         self.credits = 10
         self.reset = 0
         self.start = "Start"
-        self.font = "Read Todo" #TODO: Add font
+        self.font = "Read Todo"  # TODO: Add font
         self.fruitMachine()
-
 
 
     def spinReel(self):
@@ -76,14 +73,14 @@ class Machine():
                     self.credits += 5
                     self.winning = 5
             if Reels.reel1_list[2] == 2:
-                    self.credits += 1
-                    self.winning = 1
+                self.credits += 1
+                self.winning = 1
             if Reels.reel1_list[2] == 3:
-                    self.credits += 3
-                    self.winning = 3
+                self.credits += 3
+                self.winning = 3
             if Reels.reel1_list[2] == 4:
-                    self.credits += 10
-                    self.winning = 10
+                self.credits += 10
+                self.winning = 10
             if Reels.reel1_list[2] == 5:
                 pygame.quit()
                 self.displayWinnings
@@ -91,6 +88,7 @@ class Machine():
     def displayWinnings(self):
         if Reels.reel1_list[2] == 4:
             self.font.render_to(Display.screen, (80, 60), ("Well done! You have won the max prize"), (Colours.Green),
-                                rotation = 0, ptsize = 44)
+                                rotation=0, ptsize=44)
         else:
-            self.font.render_to(Display.screen, (80, 60), ("Your total winnings " + str(self.winning) + " credits"), (Colours.Green), None, rotation = 0, ptsize = 44)
+            self.font.render_to(Display.screen, (80, 60), ("Your total winnings " + str(self.winning) + " credits"),
+                                (Colours.Green), None, rotation=0, ptsize=44)
