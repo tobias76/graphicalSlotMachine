@@ -22,7 +22,7 @@ pygame.init()
 FPSClock = FPS.fpsClock
 
 # Load Images
-bg = pygame.image.load("Background.jpg")
+bg = pygame.image.load("Assets//Background.jpg")
 chr1 = pygame.image.load("Chris1.png")
 chr2 = pygame.image.load("Chris2.png")
 chr3 = pygame.image.load("Chris3.png")
@@ -137,7 +137,7 @@ class fruitMachine():
                     if self.fruitlist[0][2] == 4:
                         self.credits += 10
                 else:
-                    self.message = "Bitch please, you must be smokin' rocks."
+                    self.message = "You did not win this time, try again?"
                 self.end = 1
 
             reelGroup1.draw(Display.screen)
