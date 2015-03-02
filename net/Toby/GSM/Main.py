@@ -57,7 +57,7 @@ class fruitMachine():
                     sys.exit()
             self.keys = pygame.key.get_pressed()
 
-            if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == 0:
+            if self.keys[K_f] and reelGroup1.reelMove == reelGroup2.reelMove == reelGroup3.reelMove == 0:
                 self.credits -= 1
                 self.counter = 9
                 self.end = 0
@@ -82,6 +82,7 @@ class fruitMachine():
                 font.render_to(Display.screen, (680, 430), "10", (random.randint(0, 255), random.randint(0, 255),
                                                                   random.randint(0, 255), 255), None, rotation=0,
                                size=48)
+
             elif verMinor == 3:
                 Display.screen.blit(bg, (0, 0))
                 pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
@@ -103,6 +104,7 @@ class fruitMachine():
                                size=48)
 
             self.counter += 1
+
             if self.counter == 10:
                 if reel1.reelMove == 1 and reel1.stopTime % 10:
                     chris = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
@@ -138,9 +140,9 @@ class fruitMachine():
                     self.message = "Bitch please, you must be smokin' rocks."
                 self.end = 1
 
-            reel1.draw()
-            reel2.draw()
-            reel3.draw()
+            reelGroup1.draw(Display.screen)
+            reelGroup2.draw(Display.screen)
+            reelGroup3.draw(Display.screen)
 
             font.render_to(Display.screen, (5, 550), self.message,
                            (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), 255),

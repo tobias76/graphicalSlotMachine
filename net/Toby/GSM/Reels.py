@@ -6,7 +6,6 @@ import pygame
 
 import net.Toby.GSM.Display.Display as Display
 
-
 pygame.init()
 
 
