@@ -25,8 +25,9 @@ class ResourceLoader():
         self.font = pygame.freetype.Font("Assets//sans.ttf")
 
         # Sounds
-        
-        sounds = [self.defeatMusic]
 
-        self.loseMusic = "2SAD4ME.mp3"
+        self.loseMusic = "Assets//2SAD4ME.mp3"
         self.defeatMusic = pygame.mixer.music.load(self.loseMusic)
+
+        self.winMusic = "Assets//OBAT.mp3"
+        self.congratulations = pygame.mixer.music.load(self.winMusic)
