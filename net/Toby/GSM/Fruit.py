@@ -1,8 +1,14 @@
-__author__ = 'Toby'
+__author__ = 'MC Ride'
 
 import pygame
+import random
+
+import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
 
 pygame.init()
+
+# Load Images
+ResourceLoader = ResourceLoader.ResourceLoader()
 
 
 class Fruit(pygame.sprite.Sprite):
@@ -13,13 +19,13 @@ class Fruit(pygame.sprite.Sprite):
         self.reel = reel
 
         if self.ID == 1:
-            self.picture = "Chris1.png"  # TODO: Add Image
+            self.picture = ResourceLoader.chris1
         if self.ID == 2:
-            self.picture = "Chris2.png"  # TODO: Add Image
+            self.picture = ResourceLoader.chris2
         if self.ID == 3:
-            self.picture = "Chris3.png"  # TODO: Add Image
+            self.picture = ResourceLoader.chris3
         if self.ID == 4:
-            self.picture = "Chris4.jpg"  # TODO: Add Image
+            self.picture = ResourceLoader.chris4
 
         self.image = pygame.image.load(self.picture).convert_alpha()
         self.location = ((self.reel * 155) - 30, 490)

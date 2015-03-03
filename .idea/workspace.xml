@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="2" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1edcd2e9-7664-4202-b739-22ee88154c35" name="Default" comment="Code Maintenance.&#10;" />
     <ignored path="graphicalSlotMachine.iws" />
@@ -27,49 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
+      <file leaf-file-name="weycolSplash.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/weycolSplash.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="31" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.521576" vertical-offset="844" max-vertical-offset="3213">
+            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grimsdaleSplash.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/grimsdaleSplash.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Machine.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="996" selection-end="996" vertical-scroll-proportion="0.5188953" vertical-offset="391" max-vertical-offset="3077">
               <folding>
-                <element signature="e#24#40#0" expanded="true" />
+                <element signature="e#24#34#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reels.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Reels.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Splash.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/Splash.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="2" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Display.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Display/Display.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fruit.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Fruit.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -88,8 +73,13 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/net/Toby/GSM/States/Splash.py" />
+        <option value="$PROJECT_DIR$/net/Toby/GSM/Util/ResourceLoader.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Reels.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Main.py" />
+        <option value="$PROJECT_DIR$/net/Toby/GSM/Fruit.py" />
+        <option value="$PROJECT_DIR$/net/Toby/GSM/States/weycolSplash.py" />
+        <option value="$PROJECT_DIR$/net/Toby/GSM/States/grimsdaleSplash.py" />
+        <option value="$PROJECT_DIR$/net/Toby/GSM/Machine.py" />
       </list>
     </option>
   </component>
@@ -128,6 +118,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,7 +297,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,8 +317,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM" />
       <recent name="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets" />
+      <recent name="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM" />
       <recent name="E:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Resources" />
       <recent name="E:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Util" />
       <recent name="E:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Display" />
@@ -350,7 +340,9 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/net/Toby/GSM/Main.py" />
       <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -491,8 +483,23 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -514,23 +521,23 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41157895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41157895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24842106" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
@@ -560,14 +567,21 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="30" selection-start="3122" selection-end="3122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2856">
+        <state line="66" column="31" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="3213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Reels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="833">
           <folding>
-            <element signature="e#24#40#0" expanded="true" />
+            <element signature="e#21#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/Splash.py">
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/weycolSplash.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="2" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
           <folding />
@@ -584,20 +598,50 @@
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Fruit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="30" selection-start="3122" selection-end="3122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2856">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/weycolSplash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Display/Display.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Fruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2346">
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/Splash.py">
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/weycolSplash.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <folding />
@@ -614,16 +658,16 @@
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Fruit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -632,7 +676,7 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/Splash.py">
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/weycolSplash.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
@@ -642,16 +686,16 @@
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Fruit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -663,9 +707,7 @@
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -677,9 +719,7 @@
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -691,9 +731,7 @@
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -710,9 +748,7 @@
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#24#40#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,11 +777,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/Colours.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -756,21 +787,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/FPS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Fruit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://F:/Documents/College/Units/Falling Stuff/Chris.py">
@@ -783,13 +802,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/Splash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Display/Display.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -797,18 +809,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/FPS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="91" selection-end="91" vertical-scroll-proportion="0.22326455" vertical-offset="0" max-vertical-offset="533">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/ResourceLoader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="60" selection-start="601" selection-end="601" vertical-scroll-proportion="0.3495671" vertical-offset="0" max-vertical-offset="924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.2391775" vertical-offset="0" max-vertical-offset="924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Reels.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
+        <state line="23" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.56831396" vertical-offset="0" max-vertical-offset="833">
+          <folding>
+            <element signature="e#21#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Fruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="48" selection-start="471" selection-end="471" vertical-scroll-proportion="0.5188953" vertical-offset="0" max-vertical-offset="765">
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="31" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.521576" vertical-offset="844" max-vertical-offset="3213">
+        <state line="4" column="16" selection-start="80" selection-end="80" vertical-scroll-proportion="0.09883721" vertical-offset="0" max-vertical-offset="688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/weycolSplash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/States/grimsdaleSplash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="996" selection-end="996" vertical-scroll-proportion="0.5188953" vertical-offset="391" max-vertical-offset="3077">
           <folding>
-            <element signature="e#24#40#0" expanded="true" />
+            <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
