@@ -36,7 +36,7 @@ reel3 = Reels.Reel(reelGroup3, 3)
 
 class fruitMachine():
     def __init__(self):
-        self.credits = 0
+        self.credits = 10
         self.counter = 5
         self.fruitlist = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
         self.end = 0
@@ -44,8 +44,31 @@ class fruitMachine():
         self.splash()
 
     def splash(self):
-        print("Fuck this shit y'all niggas!")
-        self.fruitMachine()
+        print("Splish splosh.")
+        while True:
+            if verMinor == 4:
+                ResourceLoader.font.render_to(Display.screen, (20, 20), "Grimsdale Simulator 2015:", (random.randint(0, 255), random.randint(0, 255),
+                                                                             random.randint(0, 255), 255), None, rotation=0,
+                            size=48)
+                ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420", (random.randint(0, 255), random.randint(0, 255),
+                                                                             random.randint(0, 255), 255), None, rotation=0,
+                            size=48)
+            elif verMinor == 3:
+                ResourceLoader.font.render_to(Display.screen, (20, 20), "Grimsdale Simulator 2015:", (random.randint(0, 255), random.randint(0, 255),
+                                                                             random.randint(0, 255), 255), None, rotation=0,
+                            ptsize=48)
+                ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420", (random.randint(0, 255), random.randint(0, 255),
+                                                                             random.randint(0, 255), 255), None, rotation=0,
+                            ptsize=48)
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+            self.keys = pygame.key.get_pressed()
+            if self.keys[K_j]:
+                self.fruitMachine()
+            FPS.fpsClock.tick(FPS.fps)
+            pygame.display.update()
 
     def fruitMachine(self):
         while self.credits > 0:
@@ -161,9 +184,26 @@ class fruitMachine():
 
             FPS.fpsClock.tick(FPS.fps)
             pygame.display.update()
+        if self.credits == 0:
+            self.attract()
+        #while self.credits == 0:
+        #    # print("Please enter a credit.")
+        #    for event in pygame.event.get():
+        #        if event.type == pygame.QUIT:
+        #            pygame.quit()
+        #            sys.exit()
 
+        #    self.keys = pygame.key.get_pressed()
+        #    if self.keys[K_j]:
+        #        self.credits = 10
+        #        print(self.credits)
+
+    def attract(self):
+        self.mc = pygame.image.load("Assets//mcride.png")
+        Display.screen.blit(self.mc, (200, 100))
+        pygame.display.update()
         while self.credits == 0:
-            # print("Please enter a credit.")
+            print("Please enter a credit.")
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -173,4 +213,4 @@ class fruitMachine():
             if self.keys[K_j]:
                 self.credits = 10
                 print(self.credits)
-        self.fruitMachine()
+                self.fruitMachine()
