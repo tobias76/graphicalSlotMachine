@@ -4,7 +4,10 @@ import pygame
 
 pygame.init()
 
-screen = pygame.display.set_mode((800, 600))
+displayWidth = 800
+displayHeight = 600
+
+screen = pygame.display.set_mode((displayWidth, displayHeight))
 
 pygame.display.set_caption("Slot Machine")
 

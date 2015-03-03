@@ -1,5 +1,6 @@
 __author__ = 'MC Ride'
 
+import importlib
 import sys
 import random
 
@@ -57,16 +58,19 @@ class fruitMachine():
                     sys.exit()
             self.keys = pygame.key.get_pressed()
 
-            if self.keys[K_f] and reelGroup1.reelMove == reelGroup2.reelMove == reelGroup3.reelMove == 0:
+            if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == 0:
                 self.credits -= 1
                 self.counter = 9
                 self.end = 0
+                reel1.startReel()
+                reel2.startReel()
+                reel3.startReel()
                 self.message = ""
 
+            Display.screen.blit(bg, (0, 0))
+            pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
+            Display.screen.blit(chr1, (600, 130))
             if verMinor == 4:
-                Display.screen.blit(bg, (0, 0))
-                pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
-                Display.screen.blit(chr1, (600, 130))
                 font.render_to(Display.screen, (680, 130), "1", (random.randint(0, 255), random.randint(0, 255),
                                                                  random.randint(0, 255), 255), None, rotation=0,
                                size=48)
@@ -83,10 +87,7 @@ class fruitMachine():
                                                                   random.randint(0, 255), 255), None, rotation=0,
                                size=48)
 
-            elif verMinor == 3:
-                Display.screen.blit(bg, (0, 0))
-                pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
-                Display.screen.blit(chr1, (600, 130))
+            elif verMicro == 3:
                 font.render_to(Display.screen, (680, 130), "1", (random.randint(0, 255), random.randint(0, 255),
                                                                  random.randint(0, 255), 255), None, rotation=0,
                                ptsize=48)
@@ -101,7 +102,7 @@ class fruitMachine():
                 Display.screen.blit(chr4, (600, 430))
                 font.render_to(Display.screen, (680, 430), "10", (random.randint(0, 255), random.randint(0, 255),
                                                                   random.randint(0, 255), 255), None, rotation=0,
-                               size=48)
+                               ptsize=48)
 
             self.counter += 1
 
@@ -144,13 +145,23 @@ class fruitMachine():
             reelGroup2.draw(Display.screen)
             reelGroup3.draw(Display.screen)
 
-            font.render_to(Display.screen, (5, 550), self.message,
-                           (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), 255),
-                           None, rotation=0, size=42)
-            font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)), (random.randint(0, 255),
-                                                                                       random.randint(0, 255),
-                                                                                       random.randint(0, 255), 255),
-                           None, rotation=0, size=72)
+            if verMinor == 4:
+                font.render_to(Display.screen, (5, 550), self.message,
+                            (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), 255),
+                            None, rotation=0, size=42)
+                font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)), (random.randint(0, 255),
+                                                                                           random.randint(0, 255),
+                                                                                           random.randint(0, 255), 255),
+                            None, rotation=0, size=72)
+
+            if verMinor == 3:
+                font.render_to(Display.screen, (5, 550), self.message,
+                            (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), 255),
+                             None, rotation=0, ptsize=42)
+                font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)), (random.randint(0, 255),
+                                                                                           random.randint(0, 255),
+                                                                                           random.randint(0, 255), 255),
+                            None, rotation=0, ptsize=72)
 
             FPS.fpsClock.tick(FPS.fps)
             pygame.display.update()

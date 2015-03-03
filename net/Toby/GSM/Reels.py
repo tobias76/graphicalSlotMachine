@@ -13,10 +13,11 @@ class Reel(pygame.sprite.Sprite):
     def __init__(self, reelGroup, reelnumber):
         self.reelGroup = reelGroup
 
+        self.reelnumber = reelnumber
         self.reelList = [1, 2, 3, 4, 5]
         self.reelMove = 1
         self.reelNudge = 0
-        self.stopTime = (240 + (60 * (random.randint(1, 6) + reelnumber)))
+        self.stopTime = (240 + (60 * (random.randint(1, 6) + self.reelnumber)))
 
     def stopReel(self):
         self.reelMove = 0
@@ -24,6 +25,10 @@ class Reel(pygame.sprite.Sprite):
     def nudgeReel(self):
         self.reelMove = 1
         self.reelNudge = 1
+
+    def startReel(self):
+        self.reelMove = 1
+        self.stopTime = (240 + (60 * (random.randint(1, 6) + self.reelnumber)))
 
     def update(self):
         if self.stopTime > 0:
