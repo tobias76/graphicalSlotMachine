@@ -5,6 +5,7 @@ import random
 
 import pygame
 import pygame.freetype
+import pygame.mixer
 from pygame.locals import *
 
 from net.Toby.GSM.Display import Display as Display
@@ -60,6 +61,7 @@ class fruitMachine():
                 ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420", (random.randint(0, 255), random.randint(0, 255),
                                                                              random.randint(0, 255), 255), None, rotation=0,
                             ptsize=48)
+
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -158,6 +160,7 @@ class fruitMachine():
                     self.end = 1
                 else:
                     self.message = "You did not win this time, try again?"
+                    pygame.mixer.music.play(1)
                     self.end = 1
 
             reelGroup1.draw(Display.screen)
@@ -186,6 +189,7 @@ class fruitMachine():
             pygame.display.update()
         if self.credits == 0:
             self.attract()
+
         #while self.credits == 0:
         #    # print("Please enter a credit.")
         #    for event in pygame.event.get():
