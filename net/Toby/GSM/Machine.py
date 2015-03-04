@@ -149,6 +149,8 @@ class fruitMachine():
             if reel1.reelMove == reel2.reelMove == reel3.reelMove == 0 and self.end == 0:
                 if self.fruitlist[0][2] == self.fruitlist[1][2] == self.fruitlist[2][2]:
                     self.message = "Congratulations, you have won 0/"
+                    pygame.mixer.music.load(ResourceLoader.winMusic)
+                    pygame.mixer.music.play(1)
                     if self.fruitlist[0][2] == 1:
                         self.credits += 1
                     if self.fruitlist[0][2] == 2:
@@ -160,6 +162,7 @@ class fruitMachine():
                     self.end = 1
                 else:
                     self.message = "You did not win this time, try again?"
+                    pygame.mixer.music.load(ResourceLoader.loseMusic)
                     pygame.mixer.music.play(1)
                     self.end = 1
 
