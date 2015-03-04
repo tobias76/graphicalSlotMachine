@@ -29,5 +29,5 @@ class ResourceLoader():
         self.loseMusic = "Assets//2SAD4ME.mp3"
         self.defeatMusic = pygame.mixer.music.load(self.loseMusic)
 
-        self.winMusic = "Assets//OBAT.mp3"
-        self.congratulations = pygame.mixer.music.load(self.winMusic)
+        # self.winMusic = "Assets//OBAT.mp3"
+        # self.congratulations = pygame.mixer.music.load(self.winMusic)
