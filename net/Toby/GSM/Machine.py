@@ -53,7 +53,17 @@ class fruitMachine():
                             size=48)
                 ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420", (random.randint(0, 255), random.randint(0, 255),
                                                                              random.randint(0, 255), 255), None, rotation=0,
-                            size=48)
+                             size=48)
+                ResourceLoader.font.render_to(Display.screen, (20, 400), 'Press J to start a new game',
+                                              (random.randint(0, 255), random.randint(0, 255),
+                                                                       random.randint(0, 255), 255), None, rotation=0,
+
+                            size = 36)
+                ResourceLoader.font.render_to(Display.screen, (20, 400), 'You should also insert a new credit by pressing F',
+                                              (random.randint(0, 255), random.randint(0, 255),
+                                                                       random.randint(0, 255), 255), None, rotation=0,
+                             size = 36)
+
             elif verMinor == 3:
                 ResourceLoader.font.render_to(Display.screen, (20, 20), "Grimsdale Simulator 2015:", (random.randint(0, 255), random.randint(0, 255),
                                                                              random.randint(0, 255), 255), None, rotation=0,
@@ -61,6 +71,15 @@ class fruitMachine():
                 ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420", (random.randint(0, 255), random.randint(0, 255),
                                                                              random.randint(0, 255), 255), None, rotation=0,
                             ptsize=48)
+                ResourceLoader.font.render_to(Display.screen, (20, 400), 'Press J to start a new game',
+                                              (random.randint(0, 255), random.randint(0, 255),
+                                                                       random.randint(0, 255), 255), None, rotation=0,
+
+                            ptsize = 36)
+                ResourceLoader.font.render_to(Display.screen, (20, 450), 'You should also insert a new credit by pressing F',
+                                              (random.randint(0, 255), random.randint(0, 255),
+                                                                       random.randint(0, 255), 255), None, rotation=0,
+                             ptsize = 36)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
