@@ -69,6 +69,9 @@ class fruitMachine():
             self.keys = pygame.key.get_pressed()
             if self.keys[K_j]:
                 self.fruitMachine()
+            if self.keys[K_ESCAPE]:
+                pygame.quit()
+                sys.exit()
             FPS.fpsClock.tick(FPS.fps)
             pygame.display.update()
 
@@ -81,6 +84,7 @@ class fruitMachine():
             self.keys = pygame.key.get_pressed()
 
             if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == 0:
+                ResourceLoader.loseMusic.stop()
                 self.credits -= 1
                 self.counter = 5
                 self.end = 0
@@ -88,6 +92,9 @@ class fruitMachine():
                 reel2.startReel()
                 reel3.startReel()
                 self.message = ""
+            if self.keys[K_ESCAPE]:
+                pygame.quit()
+                sys.exit("You'll be back.")
 
             Display.screen.blit(ResourceLoader.bg, (0, 0))
             pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
@@ -149,8 +156,7 @@ class fruitMachine():
             if reel1.reelMove == reel2.reelMove == reel3.reelMove == 0 and self.end == 0:
                 if self.fruitlist[0][2] == self.fruitlist[1][2] == self.fruitlist[2][2]:
                     self.message = "Congratulations, you have won 0/"
-                    pygame.mixer.music.load(ResourceLoader.winMusic)
-                    pygame.mixer.music.play(1)
+                    ResourceLoader.winMusic.play()
                     if self.fruitlist[0][2] == 1:
                         self.credits += 1
                     if self.fruitlist[0][2] == 2:
@@ -162,8 +168,7 @@ class fruitMachine():
                     self.end = 1
                 else:
                     self.message = "You did not win this time, try again?"
-                    pygame.mixer.music.load(ResourceLoader.loseMusic)
-                    pygame.mixer.music.play(1)
+                    ResourceLoader.loseMusic.play()
                     self.end = 1
 
             reelGroup1.draw(Display.screen)
