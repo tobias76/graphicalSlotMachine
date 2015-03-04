@@ -20,7 +20,6 @@ verMinor = sys.version_info.minor
 verMicro = sys.version_info.micro
 
 pygame.init()
-pygame.mixer.init()
 
 FPSClock = FPS.fpsClock
 
@@ -99,17 +98,17 @@ class fruitMachine():
 
             if verMinor == 4:
                 ResourceLoader.font.render_to(Display.screen, (680, 130), "1", (random.randint(0, 255), random.randint(0, 255),
-                                                                                random.randint(0, 255), 255), None, rotation=0,
-                                    size=48)
+                                                                 random.randint(0, 255), 255), None, rotation=0,
+                               size=48)
                 ResourceLoader.font.render_to(Display.screen, (680, 230), "3", (random.randint(0, 255), random.randint(0, 255),
-                                                                                random.randint(0, 255), 255), None, rotation=0,
-                                    size=48)
+                                                                 random.randint(0, 255), 255), None, rotation=0,
+                               size=48)
                 ResourceLoader.font.render_to(Display.screen, (680, 330), "5", (random.randint(0, 255), random.randint(0, 255),
-                                                                                random.randint(0, 255), 255), None, rotation=0,
-                                    size=48)
+                                                                 random.randint(0, 255), 255), None, rotation=0,
+                               size=48)
                 ResourceLoader.font.render_to(Display.screen, (680, 430), "10", (random.randint(0, 255), random.randint(0, 255),
-                                                                                 random.randint(0, 255), 255), None, rotation=0,
-                                    size=48)
+                                                                  random.randint(0, 255), 255), None, rotation=0,
+                               size=48)
 
             elif verMinor == 3:
                 ResourceLoader.font.render_to(Display.screen, (680, 130), "1", (random.randint(0, 255), random.randint(0, 255),
@@ -161,7 +160,6 @@ class fruitMachine():
                     self.end = 1
                 else:
                     self.message = "You did not win this time, try again?"
-                    defeatMusic = pygame.mixer.music.load(ResourceLoader.loseMusic)
                     pygame.mixer.music.play(1)
                     self.end = 1
 
