@@ -105,7 +105,7 @@ class fruitMachine():
             self.keys = pygame.key.get_pressed()
 
             if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == 0:
-                SoundManager
+                #TODO: Reimplement stopping on F key.
                 self.credits -= 1
                 self.counter = 5
                 self.end = 0
