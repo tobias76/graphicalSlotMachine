@@ -59,7 +59,7 @@ class fruitMachine():
                                                                        random.randint(0, 255), 255), None, rotation=0,
 
                             size = 36)
-                ResourceLoader.font.render_to(Display.screen, (20, 400), 'You should also insert a new credit by pressing F',
+                ResourceLoader.font.render_to(Display.screen, (20, 450), 'You should also insert a new credit by pressing F',
                                               (random.randint(0, 255), random.randint(0, 255),
                                                                        random.randint(0, 255), 255), None, rotation=0,
                              size = 36)
