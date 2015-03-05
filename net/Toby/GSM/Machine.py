@@ -217,18 +217,6 @@ class fruitMachine():
         if self.credits == 0:
             self.attract()
 
-        #while self.credits == 0:
-        #    # print("Please enter a credit.")
-        #    for event in pygame.event.get():
-        #        if event.type == pygame.QUIT:
-        #            pygame.quit()
-        #            sys.exit()
-
-        #    self.keys = pygame.key.get_pressed()
-        #    if self.keys[K_j]:
-        #        self.credits = 10
-        #        print(self.credits)
-
     def attract(self):
         self.mc = pygame.image.load("Assets//mcride.png")
         Display.screen.blit(self.mc, (200, 100))
