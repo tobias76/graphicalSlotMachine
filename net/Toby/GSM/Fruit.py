@@ -1,7 +1,6 @@
 __author__ = 'MC Ride'
 
 import pygame
-import random
 
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
 
