@@ -4,10 +4,9 @@ import pygame
 
 import pygame.mixer
 
-import random
-
 pygame.init()
 pygame.mixer.init()
+
 
 class ResourceLoader():
     def __init__(self):
