@@ -28,26 +28,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Reels.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Reels.py">
+      <file leaf-file-name="Machine.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7118644" vertical-offset="3175" max-vertical-offset="4539">
+              <caret line="209" column="54" selection-start-line="208" selection-start-column="74" selection-end-line="209" selection-end-column="54" />
               <folding>
-                <element signature="e#21#34#0" expanded="true" />
+                <element signature="e#24#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Machine.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
+      <file leaf-file-name="SoundManager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/SoundManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7118644" vertical-offset="3889" max-vertical-offset="4471">
-              <caret line="251" column="30" selection-start-line="251" selection-start-column="30" selection-end-line="251" selection-end-column="30" />
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,8 +69,8 @@
         <option value="F:/Documents/College/Units/Falling Stuff/EmptyTemplate.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Main.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Util/ResourceLoader.py" />
-        <option value="$PROJECT_DIR$/net/Toby/GSM/Util/SoundManager.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Reels.py" />
+        <option value="$PROJECT_DIR$/net/Toby/GSM/Util/SoundManager.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Machine.py" />
       </list>
     </option>
@@ -865,20 +863,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/SoundManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64030135" vertical-offset="0" max-vertical-offset="531">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/ResourceLoader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
           <folding>
-            <element signature="e#23#36#0" expanded="true" />
+            <element signature="e#23#36#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -888,7 +878,7 @@
         <state vertical-scroll-proportion="0.41619587" vertical-offset="663" max-vertical-offset="1241">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -903,7 +893,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Reels.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+        <state vertical-scroll-proportion="0.25612053" vertical-offset="0" max-vertical-offset="799">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#21#34#0" expanded="true" />
@@ -911,10 +901,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/SoundManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7118644" vertical-offset="3889" max-vertical-offset="4471">
-          <caret line="251" column="30" selection-start-line="251" selection-start-column="30" selection-end-line="251" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.7118644" vertical-offset="3175" max-vertical-offset="4539">
+          <caret line="209" column="54" selection-start-line="208" selection-start-column="74" selection-end-line="209" selection-end-column="54" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
           </folding>

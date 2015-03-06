@@ -35,6 +35,7 @@ reel1 = Reels.Reel(reelGroup1, 1)
 reel2 = Reels.Reel(reelGroup2, 2)
 reel3 = Reels.Reel(reelGroup3, 3)
 
+SoundManager = SoundManager.SoundManager()
 
 class fruitMachine():
     def __init__(self):
@@ -119,6 +120,8 @@ class fruitMachine():
                 reel1.startReel()
                 reel2.startReel()
                 reel3.startReel()
+                pygame.mixer.Sound.stop(SoundManager.lossSound)
+                pygame.mixer.Sound.stop(SoundManager.winSound)
                 self.message = ""
             if self.keys[K_ESCAPE]:
                 pygame.quit()
@@ -200,6 +203,7 @@ class fruitMachine():
                         self.credits += 5
                     if self.fruitlist[0][2] == 4:
                         self.credits += 10
+                    SoundManager.playRandomWinSound()
                     self.end = 1
                 else:
                     self.message = "You did not win this time, try again?"
