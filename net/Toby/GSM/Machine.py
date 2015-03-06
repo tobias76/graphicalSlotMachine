@@ -247,6 +247,9 @@ class fruitMachine():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
+                if self.keys[K_ESCAPE]:
+                    pygame.quit()
+                    sys.exit()
 
             self.keys = pygame.key.get_pressed()
             if self.keys[K_j]:
