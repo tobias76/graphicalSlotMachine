@@ -9,5 +9,5 @@ displayHeight = 600
 
 screen = pygame.display.set_mode((displayWidth, displayHeight), pygame.FULLSCREEN)
 
-pygame.display.set_caption("Slot Machine")
+pygame.display.set_caption("Graphical Slot Machine")
 
