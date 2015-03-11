@@ -11,10 +11,9 @@ from pygame.locals import *
 import net.Toby.GSM.Util.FPS as FPS
 import net.Toby.GSM.Fruit as Fruit
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
-from net.Toby.GSM.Display import Display as Display
 from net.Toby.GSM import Reels as Reels
 from net.Toby.GSM.Util import SoundManager as SoundManager
-
+from net.Toby.GSM.Display import Display as Display
 
 verMaj = sys.version_info.major
 verMinor = sys.version_info.minor
