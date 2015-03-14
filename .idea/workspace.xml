@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1edcd2e9-7664-4202-b739-22ee88154c35" name="Default" comment="Code Maintenance.&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Assets/Background.jpg" afterPath="$PROJECT_DIR$/net/Toby/GSM/Assets/Background.jpg" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\cb=gapi.loaded_0" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\logo11w.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\rs=ACT90oHGJqp0HuMJon7kfCLFWECuhygzFA" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\rs=ACT90oHGJqp0HuMJon7kfCLFWECuhygzFA(1)" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\rs=AItRSTPCgYBb94Yi8c96wgNH4o0un1WPvg" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\thumbnail(1).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\thumbnail(2).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\thumbnail(3).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\thumbnail(4).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\thumbnail(5).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\thumbnail(6).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\thumbnail(7).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\thumbnail.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\title(1).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\title(2).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\title(3).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\title(4).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\title(5).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\title(6).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\title(7).html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Assets\New Tab_files\title.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Display/Display.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Display/Display.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="graphicalSlotMachine.iws" />
@@ -17,7 +39,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/graphicalSlotMachine$Main.coverage" NAME="Main Coverage Results" MODIFIED="1426337181918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net/Toby/GSM" />
+    <SUITE FILE_PATH="coverage/graphicalSlotMachine$Main.coverage" NAME="Main Coverage Results" MODIFIED="1426339576556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/net/Toby/GSM" />
     <SUITE FILE_PATH="coverage/graphicalSlotMachine$Main___EWR.coverage" NAME="Main - EWR Coverage Results" MODIFIED="1425751398862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../EWR/net/Toby/EWR" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -31,42 +53,7 @@
     <favorites_list name="graphicalSlotMachine" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Machine.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63141024" vertical-offset="4036" max-vertical-offset="4522">
-              <caret line="249" column="45" selection-start-line="249" selection-start-column="45" selection-end-line="249" selection-end-column="45" />
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reels.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Reels.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="816">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-              <folding>
-                <element signature="e#22#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Display.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Display/Display.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="323">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -87,10 +74,10 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Util/FPS.py" />
         <option value="$PROJECT_DIR$/../EWR/net/Toby/EWR/Display/Display.py" />
-        <option value="$PROJECT_DIR$/net/Toby/GSM/Display/Display.py" />
         <option value="$PROJECT_DIR$/../EWR/net/Toby/EWR/Main.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Machine.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Reels.py" />
+        <option value="$PROJECT_DIR$/net/Toby/GSM/Display/Display.py" />
       </list>
     </option>
   </component>
@@ -224,32 +211,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Display" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphicalSlotMachine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphicalSlotMachine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Toby" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GSM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -572,8 +533,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -581,9 +542,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42078364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41979522" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22919819" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23298033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -626,6 +587,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4522">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Reels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="816">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <folding>
+            <element signature="e#22#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Display/Display.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="323">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="4522">
@@ -925,14 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Display/Display.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../EWR/net/Toby/EWR/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57781756" vertical-offset="0" max-vertical-offset="559">
@@ -940,9 +921,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73655915" vertical-offset="3839" max-vertical-offset="4522">
+          <caret line="250" column="33" selection-start-line="250" selection-start-column="33" selection-end-line="250" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Reels.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="816">
+        <state vertical-scroll-proportion="-0.06989247" vertical-offset="124" max-vertical-offset="816">
           <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
           <folding>
             <element signature="e#22#35#0" expanded="true" />
@@ -950,13 +941,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Display/Display.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63141024" vertical-offset="4036" max-vertical-offset="4522">
-          <caret line="249" column="45" selection-start-line="249" selection-start-column="45" selection-end-line="249" selection-end-column="45" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.4903846" vertical-offset="0" max-vertical-offset="340">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
