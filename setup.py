@@ -7,7 +7,7 @@ setup(
               'net.Toby.GSM.Display'],
     url='',
     license='',
-    author='338111',
+    author='Toby Reed',
     author_email='',
     description=''
 )
