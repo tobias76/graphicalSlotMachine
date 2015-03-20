@@ -8,7 +8,8 @@ pygame.init()
 
 class SoundManager():
     def __init__(self):
-        self.lossSounds = ["net\Toby\GSM\Assets//2SAD4ME.ogg", "net\Toby\GSM\Assets//2SED4AIRHORN.ogg"]  # list of sound objects
+        self.lossSounds = ["net\Toby\GSM\Assets//2SAD4ME.ogg",
+                           "net\Toby\GSM\Assets//2SED4AIRHORN.ogg"]  # list of sound objects
         self.winSounds = ["net\Toby\GSM\Assets//OBAT.ogg", "net\Toby\GSM\Assets//DSWYFD.ogg"]  # list of sound objects
         self.lossSound = pygame.mixer.Sound(self.lossSounds[0])
         self.winSound = pygame.mixer.Sound(self.winSounds[0])
