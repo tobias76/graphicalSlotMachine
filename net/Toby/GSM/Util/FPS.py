@@ -5,4 +5,4 @@ import pygame
 pygame.init()
 
 fpsClock = pygame.time.Clock()
-fps = 600
+fps = 420

@@ -1,4 +1,4 @@
-__author__ = 'MC Ride'
+__author__ = 'Toby Reed'
 
 import pygame
 
@@ -18,7 +18,7 @@ class Fruit(pygame.sprite.Sprite):
         self.reel = reel
 
         if self.ID == 1:
-            self.picture = ResourceLoader.chris1
+            self.picture = ResourceLoader.imageOne
         if self.ID == 2:
             self.picture = ResourceLoader.chris2
         if self.ID == 3:
