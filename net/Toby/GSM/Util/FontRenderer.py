@@ -6,6 +6,7 @@ import sys
 import net.Toby.GSM.Display.Display as Display
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
 
+
 verMinor = sys.version_info.minor
 
 ResourceLoader = ResourceLoader.ResourceLoader()
