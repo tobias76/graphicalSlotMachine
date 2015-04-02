@@ -157,7 +157,7 @@ class fruitMachine():
                                           (random.randint(0, 255),
                                            random.randint(0, 255),
                                            random.randint(0, 255), 255),
-                                          None, rotation=0, size=72)
+                                           None, rotation=0, size=72)
 
 
             if verMinor == 3:

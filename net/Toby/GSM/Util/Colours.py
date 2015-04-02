@@ -1,3 +1,3 @@
-__author__ = 'Toby'
+__author__ = 'Toby Reed'
 
 Green = (0, 255, 0, 0)

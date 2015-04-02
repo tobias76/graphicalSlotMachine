@@ -1,4 +1,4 @@
-__author__ = 'Toby'
+__author__ = 'Toby Reed'
 
 import pygame
 
