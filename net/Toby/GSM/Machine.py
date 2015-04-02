@@ -16,7 +16,7 @@ from net.Toby.GSM import Reels as Reels
 from net.Toby.GSM.Util import SoundManager as SoundManager
 from net.Toby.GSM.Display import Display as Display
 from net.Toby.GSM.Util import FontRenderer as FontRenderer
-
+from net.Toby.GSM.Util import ImageRenderer as ImageRenderer
 
 verMaj = sys.version_info.major
 verMinor = sys.version_info.minor
@@ -39,6 +39,7 @@ reel3 = Reels.Reel(reelGroup3, 3)
 
 SoundManager = SoundManager.SoundManager()
 FontRenderer = FontRenderer.FontRenderer()
+ImageRenderer = ImageRenderer.ImageRenderer()
 
 
 class fruitMachine():
@@ -94,12 +95,7 @@ class fruitMachine():
                 pygame.quit()
                 sys.exit(0)
 
-            Display.screen.blit(ResourceLoader.bg, (0, 0))
-            pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
-            Display.screen.blit(ResourceLoader.imgOne, (600, 130))
-            Display.screen.blit(ResourceLoader.imgTwo, (600, 230))
-            Display.screen.blit(ResourceLoader.imgThree, (600, 330))
-            Display.screen.blit(ResourceLoader.imgFour, (600, 430))
+            ImageRenderer.renderGameImages()
 
             if verMinor == 4:
                 FontRenderer.versionFourGameRenderer()
