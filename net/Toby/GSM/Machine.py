@@ -106,17 +106,17 @@ class fruitMachine():
             if self.counter >= 10:
                 self.counter = 1
                 if reel1.reelMove == 1 and reel1.stopTime % 10:
-                    chris = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
+                    item = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
                     del self.fruitlist[0][0]
-                    self.fruitlist[0].append(chris.ID)
+                    self.fruitlist[0].append(item.ID)
                 if reel2.reelMove == 1 and reel2.stopTime % 10:
-                    chris = Fruit.Fruit(reelGroup2, 2, random.randint(1, 4))
+                    item = Fruit.Fruit(reelGroup2, 2, random.randint(1, 4))
                     del self.fruitlist[1][0]
-                    self.fruitlist[1].append(chris.ID)
+                    self.fruitlist[1].append(item.ID)
                 if reel3.reelMove == 1 and reel3.stopTime % 10:
-                    chris = Fruit.Fruit(reelGroup3, 3, random.randint(1, 4))
+                    item = Fruit.Fruit(reelGroup3, 3, random.randint(1, 4))
                     del self.fruitlist[2][0]
-                    self.fruitlist[2].append(chris.ID)
+                    self.fruitlist[2].append(item.ID)
             else:
                 self.counter += 1
             if reel1.reelMove == 1:
@@ -179,8 +179,9 @@ class fruitMachine():
             self.attract()
 
     def attract(self):
-        self.mc = pygame.image.load("Assets//mcride.png")
-        Display.screen.blit(self.mc, (200, 100))
+        #TODO: Sort out attract mode.
+        self.chris = pygame.image.load("Assets//Chris4.jpg")
+        Display.screen.blit(self.chris, (200, 100))
         pygame.display.update()
         while self.credits == 0:
             print("Please enter a credit.")

@@ -1,3 +1,5 @@
+__author__ = 'Toby Reed'
+
 import random
 
 import pygame

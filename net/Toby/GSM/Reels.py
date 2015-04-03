@@ -8,8 +8,8 @@ pygame.init()
 
 
 class Reel(pygame.sprite.Sprite):
-    def __init__(self, reelGroup, reelnumber):
-        self.reelGroup = reelGroup
+    def __init__(self, reelgroup, reelnumber):
+        self.reelGroup = reelgroup
 
         self.reelnumber = reelnumber
         self.reelList = [0, 1, 2, 3, 4, 5]
