@@ -5,7 +5,7 @@ import sys
 
 import net.Toby.GSM.Display.Display as Display
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
-
+import net.Toby.GSM.Util.Colours as Colour
 
 verMinor = sys.version_info.minor
 
@@ -15,12 +15,11 @@ class FontRenderer:
     def __init__(self):
         self.message = ""
 
-
+    #TODO: Antialias my fonts.
     def versionFourSplashRenderer(self):
         if verMinor == 4:
-                ResourceLoader.font.render_to(Display.screen, (20, 20), "Grimsdale Simulator 2015:",
-                                              (random.randint(0, 255), random.randint(0, 255),
-                                               random.randint(0, 255), 255), None,
+                ResourceLoader.font.render_to(Display.screen, (20, 20), "Toby's Graphical Slot Machine:",
+                                              Colour.Blue, None,
                                               rotation=0,
                                               size=48)
                 ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420",
@@ -41,9 +40,8 @@ class FontRenderer:
                                                size=36)
 
     def versionThreeSplashRender(self):
-                ResourceLoader.font.render_to(Display.screen, (20, 20), "Grimsdale Simulator 2015:",
-                                              (random.randint(0, 255), random.randint(0, 255),
-                                               random.randint(0, 255), 255), None,
+                ResourceLoader.font.render_to(Display.screen, (20, 20), "Toby's Graphical Slot Machine:",
+                                              Colour.Blue, None,
                                               rotation=0,
                                               ptsize=48)
                 ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420",

@@ -7,6 +7,7 @@ pygame.init()
 
 ResourceLoader = ResourceLoader.ResourceLoader()
 
+
 class ImageRenderer():
 
     def renderGameImages(self):

@@ -20,6 +20,7 @@ class Reel(pygame.sprite.Sprite):
     def stopReel(self):
         self.reelMove = 0
 
+    #TODO: Implement nudging
     def nudgeReel(self):
         self.reelMove = 1
         self.reelNudge = 1

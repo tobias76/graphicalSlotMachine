@@ -4,6 +4,7 @@ import pygame
 
 pygame.init()
 
+#TODO: Implement auto detecting / auto scaling monitor thing.
 displayWidth = 800
 displayHeight = 600
 
@@ -12,3 +13,5 @@ screen = pygame.display.set_mode((displayWidth, displayHeight), pygame.FULLSCREE
 
 pygame.display.set_caption("Graphical Slot Machine")
 
+def getDisplaySize():
+    pass

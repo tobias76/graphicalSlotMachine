@@ -53,7 +53,6 @@ class fruitMachine():
 
     def splash(self):
         while True:
-
             if verMinor == 4:
                 FontRenderer.versionFourSplashRenderer()
 
@@ -91,6 +90,7 @@ class fruitMachine():
                 pygame.mixer.Sound.stop(SoundManager.lossSound)
                 pygame.mixer.Sound.stop(SoundManager.winSound)
                 self.message = ""
+
             if self.keys[K_ESCAPE]:
                 pygame.quit()
                 sys.exit(0)
