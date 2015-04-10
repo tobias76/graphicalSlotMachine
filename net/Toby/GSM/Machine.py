@@ -17,6 +17,7 @@ from net.Toby.GSM.Util import SoundManager as SoundManager
 from net.Toby.GSM.Display import Display as Display
 from net.Toby.GSM.Util import FontRenderer as FontRenderer
 from net.Toby.GSM.Util import ImageRenderer as ImageRenderer
+from net.Toby.GSM.States import weycolSplash as weyColSplash
 
 verMaj = sys.version_info.major
 verMinor = sys.version_info.minor
