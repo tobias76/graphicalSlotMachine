@@ -1,10 +1,8 @@
 __author__ = 'Toby'
 
-import random
-
 import pygame
 
-import net.Toby.GSM.Display.Display as Display
+from net.Toby.GSM.Display import Display as Display
 
 pygame.init()
 
