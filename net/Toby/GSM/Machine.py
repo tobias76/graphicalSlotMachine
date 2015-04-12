@@ -1,4 +1,4 @@
-__author__ = 'MC Ride'
+__author__ = 'Toby Reed'
 
 import sys
 import random
@@ -8,12 +8,16 @@ import pygame.freetype
 import pygame.mixer
 from pygame.locals import *
 
-from net.Toby.GSM.Display import Display as Display
 import net.Toby.GSM.Util.FPS as FPS
 import net.Toby.GSM.Fruit as Fruit
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
-from net.Toby.GSM import Reels as Reels
 
+from net.Toby.GSM import Reels as Reels
+from net.Toby.GSM.Util import SoundManager as SoundManager
+from net.Toby.GSM.Display import Display as Display
+from net.Toby.GSM.Util import FontRenderer as FontRenderer
+from net.Toby.GSM.Util import ImageRenderer as ImageRenderer
+from net.Toby.GSM.States import weycolSplash as weyColSplash
 
 verMaj = sys.version_info.major
 verMinor = sys.version_info.minor
@@ -34,6 +38,10 @@ reel1 = Reels.Reel(reelGroup1, 1)
 reel2 = Reels.Reel(reelGroup2, 2)
 reel3 = Reels.Reel(reelGroup3, 3)
 
+SoundManager = SoundManager.SoundManager()
+FontRenderer = FontRenderer.FontRenderer()
+ImageRenderer = ImageRenderer.ImageRenderer()
+
 
 class fruitMachine():
     def __init__(self):
@@ -45,41 +53,12 @@ class fruitMachine():
         self.splash()
 
     def splash(self):
-        print("Splish splosh.")
         while True:
             if verMinor == 4:
-                ResourceLoader.font.render_to(Display.screen, (20, 20), "Grimsdale Simulator 2015:", (random.randint(0, 255), random.randint(0, 255),
-                                                                             random.randint(0, 255), 255), None, rotation=0,
-                            size=48)
-                ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420", (random.randint(0, 255), random.randint(0, 255),
-                                                                             random.randint(0, 255), 255), None, rotation=0,
-                             size=48)
-                ResourceLoader.font.render_to(Display.screen, (20, 400), 'Press J to start a new game',
-                                              (random.randint(0, 255), random.randint(0, 255),
-                                                                       random.randint(0, 255), 255), None, rotation=0,
-
-                            size = 36)
-                ResourceLoader.font.render_to(Display.screen, (20, 450), 'You should also insert a new credit by pressing F',
-                                              (random.randint(0, 255), random.randint(0, 255),
-                                                                       random.randint(0, 255), 255), None, rotation=0,
-                             size = 36)
+                FontRenderer.versionFourSplashRenderer()
 
             elif verMinor == 3:
-                ResourceLoader.font.render_to(Display.screen, (20, 20), "Grimsdale Simulator 2015:", (random.randint(0, 255), random.randint(0, 255),
-                                                                             random.randint(0, 255), 255), None, rotation=0,
-                            ptsize=48)
-                ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420", (random.randint(0, 255), random.randint(0, 255),
-                                                                             random.randint(0, 255), 255), None, rotation=0,
-                            ptsize=48)
-                ResourceLoader.font.render_to(Display.screen, (20, 400), 'Press J to start a new game',
-                                              (random.randint(0, 255), random.randint(0, 255),
-                                                                       random.randint(0, 255), 255), None, rotation=0,
-
-                            ptsize = 36)
-                ResourceLoader.font.render_to(Display.screen, (20, 450), 'You should also insert a new credit by pressing F',
-                                              (random.randint(0, 255), random.randint(0, 255),
-                                                                       random.randint(0, 255), 255), None, rotation=0,
-                             ptsize = 36)
+                FontRenderer.versionThreeSplashRender()
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -103,67 +82,42 @@ class fruitMachine():
             self.keys = pygame.key.get_pressed()
 
             if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == 0:
-                ResourceLoader.loseMusic.stop()
                 self.credits -= 1
                 self.counter = 5
                 self.end = 0
                 reel1.startReel()
                 reel2.startReel()
                 reel3.startReel()
+                pygame.mixer.Sound.stop(SoundManager.lossSound)
+                pygame.mixer.Sound.stop(SoundManager.winSound)
                 self.message = ""
+
             if self.keys[K_ESCAPE]:
                 pygame.quit()
-                sys.exit("You'll be back.")
+                sys.exit(0)
 
-            Display.screen.blit(ResourceLoader.bg, (0, 0))
-            pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
-            Display.screen.blit(ResourceLoader.chr1, (600, 130))
-            Display.screen.blit(ResourceLoader.chr2, (600, 230))
-            Display.screen.blit(ResourceLoader.chr3, (600, 330))
-            Display.screen.blit(ResourceLoader.chr4, (600, 430))
+            ImageRenderer.renderGameImages()
 
             if verMinor == 4:
-                ResourceLoader.font.render_to(Display.screen, (680, 130), "1", (random.randint(0, 255), random.randint(0, 255),
-                                                                 random.randint(0, 255), 255), None, rotation=0,
-                               size=48)
-                ResourceLoader.font.render_to(Display.screen, (680, 230), "3", (random.randint(0, 255), random.randint(0, 255),
-                                                                 random.randint(0, 255), 255), None, rotation=0,
-                               size=48)
-                ResourceLoader.font.render_to(Display.screen, (680, 330), "5", (random.randint(0, 255), random.randint(0, 255),
-                                                                 random.randint(0, 255), 255), None, rotation=0,
-                               size=48)
-                ResourceLoader.font.render_to(Display.screen, (680, 430), "10", (random.randint(0, 255), random.randint(0, 255),
-                                                                  random.randint(0, 255), 255), None, rotation=0,
-                               size=48)
+                FontRenderer.versionFourGameRenderer()
 
             elif verMinor == 3:
-                ResourceLoader.font.render_to(Display.screen, (680, 130), "1", (random.randint(0, 255), random.randint(0, 255),
-                                                                 random.randint(0, 255), 255), None, rotation=0,
-                               ptsize=48)
-                ResourceLoader.font.render_to(Display.screen, (680, 230), "3", (random.randint(0, 255), random.randint(0, 255),
-                                                                 random.randint(0, 255), 255), None, rotation=0,
-                               ptsize=48)
-                ResourceLoader.font.render_to(Display.screen, (680, 330), "5", (random.randint(0, 255), random.randint(0, 255),
-                                                                 random.randint(0, 255), 255), None, rotation=0,
-                               ptsize=48)
-                ResourceLoader.font.render_to(Display.screen, (680, 430), "10", (random.randint(0, 255), random.randint(0, 255),
-                                                                  random.randint(0, 255), 255), None, rotation=0,
-                               ptsize=48)
+                FontRenderer.versionThreeGameRenderer()
 
             if self.counter >= 10:
                 self.counter = 1
                 if reel1.reelMove == 1 and reel1.stopTime % 10:
-                    chris = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
+                    item = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
                     del self.fruitlist[0][0]
-                    self.fruitlist[0].append(chris.ID)
+                    self.fruitlist[0].append(item.ID)
                 if reel2.reelMove == 1 and reel2.stopTime % 10:
-                    chris = Fruit.Fruit(reelGroup2, 2, random.randint(1, 4))
+                    item = Fruit.Fruit(reelGroup2, 2, random.randint(1, 4))
                     del self.fruitlist[1][0]
-                    self.fruitlist[1].append(chris.ID)
+                    self.fruitlist[1].append(item.ID)
                 if reel3.reelMove == 1 and reel3.stopTime % 10:
-                    chris = Fruit.Fruit(reelGroup3, 3, random.randint(1, 4))
+                    item = Fruit.Fruit(reelGroup3, 3, random.randint(1, 4))
                     del self.fruitlist[2][0]
-                    self.fruitlist[2].append(chris.ID)
+                    self.fruitlist[2].append(item.ID)
             else:
                 self.counter += 1
             if reel1.reelMove == 1:
@@ -175,7 +129,6 @@ class fruitMachine():
             if reel1.reelMove == reel2.reelMove == reel3.reelMove == 0 and self.end == 0:
                 if self.fruitlist[0][2] == self.fruitlist[1][2] == self.fruitlist[2][2]:
                     self.message = "Congratulations, you have won 0/"
-                    ResourceLoader.winMusic.play()
                     if self.fruitlist[0][2] == 1:
                         self.credits += 1
                     if self.fruitlist[0][2] == 2:
@@ -184,10 +137,11 @@ class fruitMachine():
                         self.credits += 5
                     if self.fruitlist[0][2] == 4:
                         self.credits += 10
+                    SoundManager.playRandomWinSound()
                     self.end = 1
                 else:
                     self.message = "You did not win this time, try again?"
-                    ResourceLoader.loseMusic.play()
+                    SoundManager.playRandomLossSound()
                     self.end = 1
 
             reelGroup1.draw(Display.screen)
@@ -195,22 +149,30 @@ class fruitMachine():
             reelGroup3.draw(Display.screen)
 
             if verMinor == 4:
+
                 ResourceLoader.font.render_to(Display.screen, (5, 550), self.message,
-                            (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), 255),
-                    None, rotation=0, size=42)
-                ResourceLoader.font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)), (random.randint(0, 255),
-                                                                                           random.randint(0, 255),
-                                                                                           random.randint(0, 255), 255),
-                    None, rotation=0, size=72)
+                                              (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255),
+                                               255),
+                                              None, rotation=0, size=42)
+                ResourceLoader.font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)),
+                                          (random.randint(0, 255),
+                                           random.randint(0, 255),
+                                           random.randint(0, 255), 255),
+                                           None, rotation=0, size=72)
+
 
             if verMinor == 3:
+
                 ResourceLoader.font.render_to(Display.screen, (5, 550), self.message,
-                            (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), 255),
-                             None, rotation=0, ptsize=42)
-                ResourceLoader.font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)), (random.randint(0, 255),
-                                                                                           random.randint(0, 255),
-                                                                                           random.randint(0, 255), 255),
-                            None, rotation=0, ptsize=72)
+                                              (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255),
+                                               255),
+                                              None, rotation=0, ptsize=42)
+
+                ResourceLoader.font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)),
+                                              (random.randint(0, 255),
+                                               random.randint(0, 255),
+                                               random.randint(0, 255), 255),
+                                              None, rotation=0, ptsize=72)
 
             FPS.fpsClock.tick(FPS.fps)
             pygame.display.update()
@@ -218,13 +180,17 @@ class fruitMachine():
             self.attract()
 
     def attract(self):
-        self.mc = pygame.image.load("Assets//mcride.png")
-        Display.screen.blit(self.mc, (200, 100))
+        #TODO: Sort out attract mode.
+        self.chris = pygame.image.load("Assets//Chris4.jpg")
+        Display.screen.blit(self.chris, (200, 100))
         pygame.display.update()
         while self.credits == 0:
             print("Please enter a credit.")
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+                if self.keys[K_ESCAPE]:
                     pygame.quit()
                     sys.exit()
 
