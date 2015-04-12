@@ -17,11 +17,7 @@ from net.Toby.GSM.Util import SoundManager as SoundManager
 from net.Toby.GSM.Display import Display as Display
 from net.Toby.GSM.Util import FontRenderer as FontRenderer
 from net.Toby.GSM.Util import ImageRenderer as ImageRenderer
-from net.Toby.GSM.States import weycolSplash as weyColSplash
-
-verMaj = sys.version_info.major
-verMinor = sys.version_info.minor
-verMicro = sys.version_info.micro
+from net.Toby.GSM import GlobalVariables as GlobalVariables
 
 pygame.init()
 
@@ -45,7 +41,7 @@ ImageRenderer = ImageRenderer.ImageRenderer()
 
 class fruitMachine():
     def __init__(self):
-        self.credits = 10
+        self.credits = GlobalVariables.ingameCredits
         self.counter = 5
         self.fruitlist = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
         self.end = 0
@@ -54,10 +50,10 @@ class fruitMachine():
 
     def splash(self):
         while True:
-            if verMinor == 4:
+            if GlobalVariables.verMinor == 4:
                 FontRenderer.versionFourSplashRenderer()
 
-            elif verMinor == 3:
+            elif GlobalVariables.verMinor == 3:
                 FontRenderer.versionThreeSplashRender()
 
             for event in pygame.event.get():
@@ -98,10 +94,10 @@ class fruitMachine():
 
             ImageRenderer.renderGameImages()
 
-            if verMinor == 4:
+            if GlobalVariables.verMinor == 4:
                 FontRenderer.versionFourGameRenderer()
 
-            elif verMinor == 3:
+            elif GlobalVariables.verMinor == 3:
                 FontRenderer.versionThreeGameRenderer()
 
             if self.counter >= 10:
@@ -148,7 +144,7 @@ class fruitMachine():
             reelGroup2.draw(Display.screen)
             reelGroup3.draw(Display.screen)
 
-            if verMinor == 4:
+            if GlobalVariables.verMinor == 4:
 
                 ResourceLoader.font.render_to(Display.screen, (5, 550), self.message,
                                               (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255),
@@ -161,7 +157,7 @@ class fruitMachine():
                                            None, rotation=0, size=72)
 
 
-            if verMinor == 3:
+            if GlobalVariables.verMinor == 3:
 
                 ResourceLoader.font.render_to(Display.screen, (5, 550), self.message,
                                               (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255),

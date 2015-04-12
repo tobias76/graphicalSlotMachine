@@ -5,7 +5,6 @@ import pygame
 import pygame.mixer
 
 pygame.init()
-pygame.mixer.init()
 
 
 class ResourceLoader():

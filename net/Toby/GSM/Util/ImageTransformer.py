@@ -20,3 +20,4 @@ class imageTransformer():
     def imageScaler(self):
         if self.displayHeight == 1366 & self.displayHeight == 720:
             ResourceLoader.bg = pygame.transform.scale(ResourceLoader.bg, (1366, 766))
+            Display.screen.blit(ResourceLoader.bg, (0, 0))

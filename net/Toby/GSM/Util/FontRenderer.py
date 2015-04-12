@@ -1,5 +1,7 @@
 __author__ = 'Toby Reed'
 
+import pygame
+
 import random
 import sys
 
@@ -7,6 +9,9 @@ import net.Toby.GSM.Display.Display as Display
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
 import net.Toby.GSM.Util.Colours as Colour
 
+pygame.init()
+
+#TODO: Move the backwards compat somewhere else.
 verMinor = sys.version_info.minor
 
 ResourceLoader = ResourceLoader.ResourceLoader()
@@ -15,7 +20,6 @@ class FontRenderer:
     def __init__(self):
         self.message = ""
 
-    #TODO: Antialias my fonts.
     def versionFourSplashRenderer(self):
         if verMinor == 4:
                 ResourceLoader.font.render_to(Display.screen, (20, 20), "Toby's Graphical Slot Machine:",
