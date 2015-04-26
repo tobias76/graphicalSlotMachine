@@ -44,7 +44,7 @@ class fruitMachine():
         self.credits = GlobalVariables.ingameCredits
         self.counter = 5
         self.fruitlist = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
-        self.end = 0
+        self.end = False
         self.message = ""
         self.splash()
 
@@ -81,7 +81,7 @@ class fruitMachine():
             if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == 0:
                 self.credits -= 1
                 self.counter = 5
-                self.end = 0
+                self.end = False
                 reel1.startReel()
                 reel2.startReel()
                 reel3.startReel()
@@ -123,7 +123,7 @@ class fruitMachine():
                 reel2.update()
             if reel3.reelMove == 1:
                 reel3.update()
-            if reel1.reelMove == reel2.reelMove == reel3.reelMove == 0 and self.end == 0:
+            if reel1.reelMove == reel2.reelMove == reel3.reelMove == 0 and self.end == False:
                 if self.fruitlist[0][2] == self.fruitlist[1][2] == self.fruitlist[2][2]:
                     self.message = "Congratulations, you have won 0/"
                     if self.fruitlist[0][2] == 1:
@@ -135,11 +135,11 @@ class fruitMachine():
                     if self.fruitlist[0][2] == 4:
                         self.credits += 10
                     SoundManager.playRandomWinSound()
-                    self.end = 1
+                    self.end = True
                 else:
                     self.message = "You did not win this time, try again?"
                     SoundManager.playRandomLossSound()
-                    self.end = 1
+                    self.end = True
 
             reelGroup1.draw(Display.screen)
             reelGroup2.draw(Display.screen)
@@ -177,7 +177,11 @@ class fruitMachine():
             self.attract()
 
     def attract(self):
-        FontRenderer.versionFourAttractRenderer()
+        if GlobalVariables.verMinor == 4:
+            FontRenderer.versionFourAttractRenderer()
+        elif GlobalVariables.verMinor == 3:
+            FontRenderer.versionThreeAttractRenderer()
+
         FPSClock.tick(FPS.fps)
         pygame.display.update()
         while self.credits == 0:

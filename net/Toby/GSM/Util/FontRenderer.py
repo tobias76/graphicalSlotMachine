@@ -107,3 +107,8 @@ class FontRenderer:
                                         (0, 0, 255, 255), None, rotation=0,
                                          size=48)
 
+    def versionThreeAttractRenderer(self):
+        #TODO: Center this.
+        ResourceLoader.font.render_to(Display.screen, (400, 300), "Play again! its free!",
+                                (0, 0, 255, 255), None, rotation=0,
+                                 ptsize=48)
