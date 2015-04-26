@@ -6,7 +6,7 @@ import sys
 
 pygame.init()
 
-ingameCredits = 10
+ingameCredits = 1
 
 verMaj = sys.version_info.major
 verMinor = sys.version_info.minor

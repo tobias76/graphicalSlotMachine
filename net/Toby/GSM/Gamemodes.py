@@ -11,5 +11,3 @@ class Gamemodes():
     def __init__(self):
         self.credits = GlobalVariables.ingameCredits
         self.gamemode = "Play"
-
-

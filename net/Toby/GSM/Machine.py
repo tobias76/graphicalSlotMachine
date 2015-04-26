@@ -11,8 +11,8 @@ from pygame.locals import *
 import net.Toby.GSM.Util.FPS as FPS
 import net.Toby.GSM.Fruit as Fruit
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
+import net.Toby.GSM.Reels as Reels
 
-from net.Toby.GSM import Reels as Reels
 from net.Toby.GSM.Util import SoundManager as SoundManager
 from net.Toby.GSM.Display import Display as Display
 from net.Toby.GSM.Util import FontRenderer as FontRenderer
@@ -60,6 +60,7 @@ class fruitMachine():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
+                    
             self.keys = pygame.key.get_pressed()
             if self.keys[K_j]:
                 self.fruitMachine()
@@ -176,12 +177,10 @@ class fruitMachine():
             self.attract()
 
     def attract(self):
-        #TODO: Sort out attract mode.
-        self.chris = pygame.image.load("Assets//Chris4.jpg")
-        Display.screen.blit(self.chris, (200, 100))
+        FontRenderer.versionFourAttractRenderer()
+        FPSClock.tick(FPS.fps)
         pygame.display.update()
         while self.credits == 0:
-            print("Please enter a credit.")
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -193,5 +192,4 @@ class fruitMachine():
             self.keys = pygame.key.get_pressed()
             if self.keys[K_j]:
                 self.credits = 10
-                print(self.credits)
                 self.fruitMachine()
