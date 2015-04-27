@@ -13,20 +13,20 @@ class Reel(pygame.sprite.Sprite):
 
         self.reelnumber = reelnumber
         self.reelList = [0, 1, 2, 3, 4, 5]
-        self.reelMove = 1
-        self.reelNudge = 0
+        self.reelMove = True
+        self.reelNudge = False
         self.stopTime = (240 + (self.reelnumber * 60))
 
     def stopReel(self):
-        self.reelMove = 0
+        self.reelMove = False
 
     #TODO: Implement nudging
     def nudgeReel(self):
-        self.reelMove = 1
+        self.reelMove = True
         self.reelNudge = 1
 
     def startReel(self):
-        self.reelMove = 1
+        self.reelMove = True
         self.stopTime = (240 + (self.reelnumber * 60))
 
     def update(self):
@@ -35,8 +35,8 @@ class Reel(pygame.sprite.Sprite):
             self.reelGroup.update()
         else:
             self.stopReel()
-        if self.reelNudge == 1:
-            self.reelMove = 0
+        if self.reelNudge == True:
+            self.reelMove = False
 
     def draw(self):
         self.reelGroup.draw(Display.screen)

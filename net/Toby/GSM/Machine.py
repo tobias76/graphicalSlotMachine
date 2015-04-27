@@ -78,7 +78,7 @@ class fruitMachine():
                     sys.exit()
             self.keys = pygame.key.get_pressed()
 
-            if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == 0:
+            if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == False:
                 self.credits -= 1
                 self.counter = 5
                 self.end = False
@@ -103,25 +103,25 @@ class fruitMachine():
 
             if self.counter >= 10:
                 self.counter = 1
-                if reel1.reelMove == 1 and reel1.stopTime % 10:
+                if reel1.reelMove == True and reel1.stopTime % 10:
                     item = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
                     del self.fruitlist[0][0]
                     self.fruitlist[0].append(item.ID)
-                if reel2.reelMove == 1 and reel2.stopTime % 10:
+                if reel2.reelMove == True and reel2.stopTime % 10:
                     item = Fruit.Fruit(reelGroup2, 2, random.randint(1, 4))
                     del self.fruitlist[1][0]
                     self.fruitlist[1].append(item.ID)
-                if reel3.reelMove == 1 and reel3.stopTime % 10:
+                if reel3.reelMove == True and reel3.stopTime % 10:
                     item = Fruit.Fruit(reelGroup3, 3, random.randint(1, 4))
                     del self.fruitlist[2][0]
                     self.fruitlist[2].append(item.ID)
             else:
                 self.counter += 1
-            if reel1.reelMove == 1:
+            if reel1.reelMove == True:
                 reel1.update()
-            if reel2.reelMove == 1:
+            if reel2.reelMove == True:
                 reel2.update()
-            if reel3.reelMove == 1:
+            if reel3.reelMove == True:
                 reel3.update()
             if reel1.reelMove == reel2.reelMove == reel3.reelMove == 0 and self.end == False:
                 if self.fruitlist[0][2] == self.fruitlist[1][2] == self.fruitlist[2][2]:
