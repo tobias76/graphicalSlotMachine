@@ -17,7 +17,15 @@ from net.Toby.GSM.Util import SoundManager as SoundManager
 from net.Toby.GSM.Display import Display as Display
 from net.Toby.GSM.Util import FontRenderer as FontRenderer
 from net.Toby.GSM.Util import ImageRenderer as ImageRenderer
+<<<<<<< HEAD
 from net.Toby.GSM import GlobalVariables as GlobalVariables
+=======
+from net.Toby.GSM.States import weycolSplash as weyColSplash
+
+verMaj = sys.version_info.major
+verMinor = sys.version_info.minor
+verMicro = sys.version_info.micro
+>>>>>>> master
 
 pygame.init()
 
@@ -50,7 +58,11 @@ class fruitMachine():
 
     def splash(self):
         while True:
+<<<<<<< HEAD
             if GlobalVariables.verMinor == 4:
+=======
+            if verMinor == 4:
+>>>>>>> master
                 FontRenderer.versionFourSplashRenderer()
 
             elif GlobalVariables.verMinor == 3:
@@ -102,6 +114,7 @@ class fruitMachine():
 
             if self.counter >= 10:
                 self.counter = 1
+<<<<<<< HEAD
                 if reel1.reelMove == True and reel1.stopTime % 10:
                     item = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
                     del self.fruitlist[0][0]
@@ -111,6 +124,17 @@ class fruitMachine():
                     del self.fruitlist[1][0]
                     self.fruitlist[1].append(item.ID)
                 if reel3.reelMove == True and reel3.stopTime % 10:
+=======
+                if reel1.reelMove == 1 and reel1.stopTime % 10:
+                    item = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
+                    del self.fruitlist[0][0]
+                    self.fruitlist[0].append(item.ID)
+                if reel2.reelMove == 1 and reel2.stopTime % 10:
+                    item = Fruit.Fruit(reelGroup2, 2, random.randint(1, 4))
+                    del self.fruitlist[1][0]
+                    self.fruitlist[1].append(item.ID)
+                if reel3.reelMove == 1 and reel3.stopTime % 10:
+>>>>>>> master
                     item = Fruit.Fruit(reelGroup3, 3, random.randint(1, 4))
                     del self.fruitlist[2][0]
                     self.fruitlist[2].append(item.ID)
@@ -176,12 +200,18 @@ class fruitMachine():
             self.attract()
 
     def attract(self):
+<<<<<<< HEAD
         if GlobalVariables.verMinor == 4:
             FontRenderer.versionFourAttractRenderer()
         elif GlobalVariables.verMinor == 3:
             FontRenderer.versionThreeAttractRenderer()
 
         FPSClock.tick(FPS.fps)
+=======
+        #TODO: Sort out attract mode.
+        self.chris = pygame.image.load("Assets//Chris4.jpg")
+        Display.screen.blit(self.chris, (200, 100))
+>>>>>>> master
         pygame.display.update()
         while self.credits == 0:
             for event in pygame.event.get():
