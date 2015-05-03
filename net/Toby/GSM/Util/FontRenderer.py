@@ -8,11 +8,11 @@ import sys
 import net.Toby.GSM.Display.Display as Display
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
 import net.Toby.GSM.Util.Colours as Colour
+import net.Toby.GSM.GlobalVariables as GlobalVariables
 
 pygame.init()
 
-#TODO: Move the backwards compat somewhere else.
-verMinor = sys.version_info.minor
+verMinor = GlobalVariables.verMinor
 
 ResourceLoader = ResourceLoader.ResourceLoader()
 
@@ -23,9 +23,8 @@ class FontRenderer:
     def versionFourSplashRenderer(self):
         if verMinor == 4:
                 ResourceLoader.font.render_to(Display.screen, (20, 20), "Toby's Graphical Slot Machine:",
-                                              Colour.Blue, None,
-                                              rotation=0,
-                                              size=48)
+                                              (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+                                               , None, rotation=0, size=48)
                 ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420",
                                               (random.randint(0, 255), random.randint(0, 255),
                                                random.randint(0, 255), 255), None,

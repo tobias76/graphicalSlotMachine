@@ -1,5 +1,7 @@
 import pygame
 
+import random
+
 import net.Toby.GSM.Gamemodes as Gamemodes
 
 from net.Toby.GSM.Display import Display
@@ -20,7 +22,8 @@ class ImageRenderer():
             ImageTransformer.imageScaler()
         else:
             Display.screen.blit(ResourceLoader.background, (0, 0))
-            pygame.draw.rect(Display.screen, (255, 0, 0), (120, 285, 385, 75))
+            pygame.draw.rect(Display.screen, (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)),
+                             (120, 285, 385, 75))
             Display.screen.blit(ResourceLoader.imgOne, (600, 130))
             Display.screen.blit(ResourceLoader.imgTwo, (600, 230))
             Display.screen.blit(ResourceLoader.imgThree, (600, 330))

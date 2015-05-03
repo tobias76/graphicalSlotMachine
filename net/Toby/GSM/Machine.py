@@ -23,7 +23,7 @@ pygame.init()
 
 FPSClock = FPS.fpsClock
 
-# Load Images
+# Create a ResourceLoader object
 ResourceLoader = ResourceLoader.ResourceLoader()
 
 reelGroup1 = pygame.sprite.Group()
@@ -60,7 +60,6 @@ class fruitMachine():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
-                    
             self.keys = pygame.key.get_pressed()
             if self.keys[K_j]:
                 self.fruitMachine()
@@ -165,7 +164,7 @@ class fruitMachine():
                                                255),
                                               None, rotation=0, ptsize=42)
 
-                ResourceLoader.font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)),
+                ResourceLoader.font.render_to(Display.screen, (5, 5), ("Credits: " + str(GlobalVariables.ingameCredits)),
                                               (random.randint(0, 255),
                                                random.randint(0, 255),
                                                random.randint(0, 255), 255),
