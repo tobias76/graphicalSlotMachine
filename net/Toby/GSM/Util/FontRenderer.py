@@ -1,13 +1,18 @@
 __author__ = 'Toby Reed'
 
+import pygame
+
 import random
 import sys
 
 import net.Toby.GSM.Display.Display as Display
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
+import net.Toby.GSM.Util.Colours as Colour
+import net.Toby.GSM.GlobalVariables as GlobalVariables
 
+pygame.init()
 
-verMinor = sys.version_info.minor
+verMinor = GlobalVariables.verMinor
 
 ResourceLoader = ResourceLoader.ResourceLoader()
 
@@ -15,14 +20,11 @@ class FontRenderer:
     def __init__(self):
         self.message = ""
 
-
     def versionFourSplashRenderer(self):
         if verMinor == 4:
-                ResourceLoader.font.render_to(Display.screen, (20, 20), "Grimsdale Simulator 2015:",
-                                              (random.randint(0, 255), random.randint(0, 255),
-                                               random.randint(0, 255), 255), None,
-                                              rotation=0,
-                                              size=48)
+                ResourceLoader.font.render_to(Display.screen, (20, 20), "Toby's Graphical Slot Machine:",
+                                              (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+                                               , None, rotation=0, size=48)
                 ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420",
                                               (random.randint(0, 255), random.randint(0, 255),
                                                random.randint(0, 255), 255), None,
@@ -41,9 +43,8 @@ class FontRenderer:
                                                size=36)
 
     def versionThreeSplashRender(self):
-                ResourceLoader.font.render_to(Display.screen, (20, 20), "Grimsdale Simulator 2015:",
-                                              (random.randint(0, 255), random.randint(0, 255),
-                                               random.randint(0, 255), 255), None,
+                ResourceLoader.font.render_to(Display.screen, (20, 20), "Toby's Graphical Slot Machine:",
+                                              Colour.Blue, None,
                                               rotation=0,
                                               ptsize=48)
                 ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420",
@@ -99,3 +100,14 @@ class FontRenderer:
                                                random.randint(0, 255), 255), None, rotation=0,
                                               ptsize=48)
 
+    def versionFourAttractRenderer(self):
+        #TODO: Center this.
+        ResourceLoader.font.render_to(Display.screen, (400, 300), "Play again! its free!",
+                                        (0, 0, 255, 255), None, rotation=0,
+                                         size=48)
+
+    def versionThreeAttractRenderer(self):
+        #TODO: Center this.
+        ResourceLoader.font.render_to(Display.screen, (400, 300), "Play again! its free!",
+                                (0, 0, 255, 255), None, rotation=0,
+                                 ptsize=48)

@@ -11,23 +11,27 @@ from pygame.locals import *
 import net.Toby.GSM.Util.FPS as FPS
 import net.Toby.GSM.Fruit as Fruit
 import net.Toby.GSM.Util.ResourceLoader as ResourceLoader
+import net.Toby.GSM.Reels as Reels
 
-from net.Toby.GSM import Reels as Reels
 from net.Toby.GSM.Util import SoundManager as SoundManager
 from net.Toby.GSM.Display import Display as Display
 from net.Toby.GSM.Util import FontRenderer as FontRenderer
 from net.Toby.GSM.Util import ImageRenderer as ImageRenderer
+<<<<<<< HEAD
+from net.Toby.GSM import GlobalVariables as GlobalVariables
+=======
 from net.Toby.GSM.States import weycolSplash as weyColSplash
 
 verMaj = sys.version_info.major
 verMinor = sys.version_info.minor
 verMicro = sys.version_info.micro
+>>>>>>> master
 
 pygame.init()
 
 FPSClock = FPS.fpsClock
 
-# Load Images
+# Create a ResourceLoader object
 ResourceLoader = ResourceLoader.ResourceLoader()
 
 reelGroup1 = pygame.sprite.Group()
@@ -45,19 +49,23 @@ ImageRenderer = ImageRenderer.ImageRenderer()
 
 class fruitMachine():
     def __init__(self):
-        self.credits = 10
+        self.credits = GlobalVariables.ingameCredits
         self.counter = 5
         self.fruitlist = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
-        self.end = 0
+        self.end = False
         self.message = ""
         self.splash()
 
     def splash(self):
         while True:
+<<<<<<< HEAD
+            if GlobalVariables.verMinor == 4:
+=======
             if verMinor == 4:
+>>>>>>> master
                 FontRenderer.versionFourSplashRenderer()
 
-            elif verMinor == 3:
+            elif GlobalVariables.verMinor == 3:
                 FontRenderer.versionThreeSplashRender()
 
             for event in pygame.event.get():
@@ -81,10 +89,10 @@ class fruitMachine():
                     sys.exit()
             self.keys = pygame.key.get_pressed()
 
-            if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == 0:
+            if self.keys[K_f] and reel1.reelMove == reel2.reelMove == reel3.reelMove == False:
                 self.credits -= 1
                 self.counter = 5
-                self.end = 0
+                self.end = False
                 reel1.startReel()
                 reel2.startReel()
                 reel3.startReel()
@@ -98,14 +106,25 @@ class fruitMachine():
 
             ImageRenderer.renderGameImages()
 
-            if verMinor == 4:
+            if GlobalVariables.verMinor == 4:
                 FontRenderer.versionFourGameRenderer()
 
-            elif verMinor == 3:
+            elif GlobalVariables.verMinor == 3:
                 FontRenderer.versionThreeGameRenderer()
 
             if self.counter >= 10:
                 self.counter = 1
+<<<<<<< HEAD
+                if reel1.reelMove == True and reel1.stopTime % 10:
+                    item = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
+                    del self.fruitlist[0][0]
+                    self.fruitlist[0].append(item.ID)
+                if reel2.reelMove == True and reel2.stopTime % 10:
+                    item = Fruit.Fruit(reelGroup2, 2, random.randint(1, 4))
+                    del self.fruitlist[1][0]
+                    self.fruitlist[1].append(item.ID)
+                if reel3.reelMove == True and reel3.stopTime % 10:
+=======
                 if reel1.reelMove == 1 and reel1.stopTime % 10:
                     item = Fruit.Fruit(reelGroup1, 1, random.randint(1, 4))
                     del self.fruitlist[0][0]
@@ -115,18 +134,19 @@ class fruitMachine():
                     del self.fruitlist[1][0]
                     self.fruitlist[1].append(item.ID)
                 if reel3.reelMove == 1 and reel3.stopTime % 10:
+>>>>>>> master
                     item = Fruit.Fruit(reelGroup3, 3, random.randint(1, 4))
                     del self.fruitlist[2][0]
                     self.fruitlist[2].append(item.ID)
             else:
                 self.counter += 1
-            if reel1.reelMove == 1:
+            if reel1.reelMove == True:
                 reel1.update()
-            if reel2.reelMove == 1:
+            if reel2.reelMove == True:
                 reel2.update()
-            if reel3.reelMove == 1:
+            if reel3.reelMove == True:
                 reel3.update()
-            if reel1.reelMove == reel2.reelMove == reel3.reelMove == 0 and self.end == 0:
+            if reel1.reelMove == reel2.reelMove == reel3.reelMove == 0 and self.end == False:
                 if self.fruitlist[0][2] == self.fruitlist[1][2] == self.fruitlist[2][2]:
                     self.message = "Congratulations, you have won 0/"
                     if self.fruitlist[0][2] == 1:
@@ -138,17 +158,17 @@ class fruitMachine():
                     if self.fruitlist[0][2] == 4:
                         self.credits += 10
                     SoundManager.playRandomWinSound()
-                    self.end = 1
+                    self.end = True
                 else:
                     self.message = "You did not win this time, try again?"
                     SoundManager.playRandomLossSound()
-                    self.end = 1
+                    self.end = True
 
             reelGroup1.draw(Display.screen)
             reelGroup2.draw(Display.screen)
             reelGroup3.draw(Display.screen)
 
-            if verMinor == 4:
+            if GlobalVariables.verMinor == 4:
 
                 ResourceLoader.font.render_to(Display.screen, (5, 550), self.message,
                                               (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255),
@@ -161,14 +181,14 @@ class fruitMachine():
                                            None, rotation=0, size=72)
 
 
-            if verMinor == 3:
+            if GlobalVariables.verMinor == 3:
 
                 ResourceLoader.font.render_to(Display.screen, (5, 550), self.message,
                                               (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255),
                                                255),
                                               None, rotation=0, ptsize=42)
 
-                ResourceLoader.font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)),
+                ResourceLoader.font.render_to(Display.screen, (5, 5), ("Credits: " + str(GlobalVariables.ingameCredits)),
                                               (random.randint(0, 255),
                                                random.randint(0, 255),
                                                random.randint(0, 255), 255),
@@ -180,12 +200,20 @@ class fruitMachine():
             self.attract()
 
     def attract(self):
+<<<<<<< HEAD
+        if GlobalVariables.verMinor == 4:
+            FontRenderer.versionFourAttractRenderer()
+        elif GlobalVariables.verMinor == 3:
+            FontRenderer.versionThreeAttractRenderer()
+
+        FPSClock.tick(FPS.fps)
+=======
         #TODO: Sort out attract mode.
         self.chris = pygame.image.load("Assets//Chris4.jpg")
         Display.screen.blit(self.chris, (200, 100))
+>>>>>>> master
         pygame.display.update()
         while self.credits == 0:
-            print("Please enter a credit.")
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -197,5 +225,4 @@ class fruitMachine():
             self.keys = pygame.key.get_pressed()
             if self.keys[K_j]:
                 self.credits = 10
-                print(self.credits)
                 self.fruitMachine()

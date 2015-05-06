@@ -17,6 +17,7 @@ class Fruit(pygame.sprite.Sprite):
         self.ID = ID
         self.reel = reel
 
+        # TODO: Move this to a seperate function maybe.
         if self.ID == 1:
             self.picture = ResourceLoader.imageOne
         if self.ID == 2:
