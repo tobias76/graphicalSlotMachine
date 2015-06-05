@@ -27,6 +27,7 @@ class Reel(pygame.sprite.Sprite):
 
     def startReel(self):
         self.reelMove = True
+        #This sets the stop time to the reel number times 60fps
         self.stopTime = (240 + (self.reelnumber * 60))
 
     def update(self):
