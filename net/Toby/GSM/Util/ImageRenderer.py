@@ -10,6 +10,7 @@ from net.Toby.GSM.Util import ImageTransformer
 
 pygame.init()
 
+# Object creation
 ResourceLoader = ResourceLoader.ResourceLoader()
 ImageTransformer = ImageTransformer.imageTransformer()
 Gamemodes = Gamemodes.Gamemodes()
@@ -19,8 +20,10 @@ class ImageRenderer():
 
     def renderGameImages(self):
         if Gamemodes.gamemode == "Debug":
+            #This calls a highly experimental and broken feature.
             ImageTransformer.imageScaler()
         else:
+            #This code renders / blits all images onto the display.
             Display.screen.blit(ResourceLoader.background, (0, 0))
             pygame.draw.rect(Display.screen, (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)),
                              (120, 285, 385, 75))

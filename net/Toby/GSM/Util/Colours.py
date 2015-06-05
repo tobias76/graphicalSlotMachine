@@ -1,5 +1,7 @@
 __author__ = 'Toby Reed'
 
+# Constant Colours
+
 Red = (255, 0, 0, 0)
 
 Green = (0, 255, 0, 0)

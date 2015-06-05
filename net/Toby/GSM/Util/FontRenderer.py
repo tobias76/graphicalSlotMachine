@@ -16,16 +16,18 @@ verMinor = GlobalVariables.verMinor
 
 ResourceLoader = ResourceLoader.ResourceLoader()
 
+
 class FontRenderer:
     def __init__(self):
         self.message = ""
 
+    # Any version four renderer uses size instead of ptsize
     def versionFourSplashRenderer(self):
         if verMinor == 4:
-                ResourceLoader.font.render_to(Display.screen, (20, 20), "Toby's Graphical Slot Machine:",
+                ResourceLoader.font.render_to(Display.screen, (20, 20), "Weymouth College Slot Machine",
                                               (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
                                                , None, rotation=0, size=48)
-                ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420",
+                ResourceLoader.font.render_to(Display.screen, (20, 80), "Snow Gaming",
                                               (random.randint(0, 255), random.randint(0, 255),
                                                random.randint(0, 255), 255), None,
                                               rotation=0,
@@ -42,12 +44,13 @@ class FontRenderer:
                                                rotation=0,
                                                size=36)
 
+    # Any version four renderer uses ptsize instead of size
     def versionThreeSplashRender(self):
-                ResourceLoader.font.render_to(Display.screen, (20, 20), "Toby's Graphical Slot Machine:",
+                ResourceLoader.font.render_to(Display.screen, (20, 20), "Weymouth College Slot Machine",
                                               Colour.Blue, None,
                                               rotation=0,
                                               ptsize=48)
-                ResourceLoader.font.render_to(Display.screen, (20, 80), "GOTY Edition. Pegi 420",
+                ResourceLoader.font.render_to(Display.screen, (20, 80), "Snow Gaming",
                                               (random.randint(0, 255), random.randint(0, 255),
                                                random.randint(0, 255), 255), None, rotation=0,
                                               ptsize=48)
@@ -81,7 +84,6 @@ class FontRenderer:
                                                size=48)
 
 
-
     def versionThreeGameRenderer(self):
                 ResourceLoader.font.render_to(Display.screen, (680, 130), "1",
                                               (random.randint(0, 255), random.randint(0, 255),
@@ -102,12 +104,11 @@ class FontRenderer:
 
     def versionFourAttractRenderer(self):
         #TODO: Center this.
-        ResourceLoader.font.render_to(Display.screen, (400, 300), "Play again! its free!",
-                                        (0, 0, 255, 255), None, rotation=0,
-                                         size=48)
+        ResourceLoader.font.render_to(Display.screen, (random.randint(0, 800),random.randint(0, 600)), "Play again! its free!",
+                                (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), 255), None, rotation=0, size=48)
+
 
     def versionThreeAttractRenderer(self):
         #TODO: Center this.
-        ResourceLoader.font.render_to(Display.screen, (400, 300), "Play again! its free!",
-                                (0, 0, 255, 255), None, rotation=0,
-                                 ptsize=48)
+        ResourceLoader.font.render_to(Display.screen, (random.randint(0, 800),random.randint(0, 600)), "Play again! its free!",
+                                (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255), 255), None, rotation=0, ptsize=48)
