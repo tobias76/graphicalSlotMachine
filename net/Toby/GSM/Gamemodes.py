@@ -10,5 +10,5 @@ pygame.init()
 class Gamemodes():
     def __init__(self):
         self.credits = GlobalVariables.ingameCredits
-        #This allows me to work on different features without breaking the rest of the game
+        # This allows me to work on different features without breaking the rest of the game
         self.gamemode = "Play"

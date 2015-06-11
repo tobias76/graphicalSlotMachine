@@ -32,13 +32,13 @@ class Fruit(pygame.sprite.Sprite):
         self.location = ((self.reel * 155) - 30, 490)
         self.rect = self.image.get_rect()
         self.rect.topleft = self.location
-        #This sets the reel speed, set in pixel per second.
+        # This sets the reel speed, set in pixel per second.
         self.speed = 8
-        #Adds the fruit to a reel group
+        # Adds the fruit to a reel group
         self.reelGroup.add(self)
 
     def update(self):
-        #This checks if the rect is less than or equal to the speed
+        # This checks if the rect is less than or equal to the speed
         self.rect.y -= self.speed
         if self.rect.y < 110:
             self.kill()

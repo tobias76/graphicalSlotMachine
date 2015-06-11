@@ -14,12 +14,12 @@ ResourceLoader = ResourceLoader.ResourceLoader
 class imageTransformer():
     def __init__(self):
 
-        #This creates a local variable using the display class's display size variable
+        # This creates a local variable using the display class's display size variable
         self.displayHeight = Display.displayHeight
         self.displayWidth = Display.displayWidth
 
-    #This feature is highly broken and unlikely to work when called, it checks for the screen size and scales the image
-    #to the size needed to fill the screen.
+    # This feature is highly broken and unlikely to work when called, it checks for the screen size and scales the image
+    # to the size needed to fill the screen.
     def imageScaler(self):
         if self.displayHeight != 800 & self.displayHeight != 600:
             ResourceLoader.bg = pygame.transform.scale(ResourceLoader.bg, (self.displayHeight, self.displayWidth))
