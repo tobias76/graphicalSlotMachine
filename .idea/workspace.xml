@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1edcd2e9-7664-4202-b739-22ee88154c35" name="Default" comment="Code Maintenance.&#10;">
-      <change type="DELETED" beforePath="F:\Programming\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Cheats.py" afterPath="" />
-      <change type="DELETED" beforePath="F:\Programming\Source Code\Python\graphicalSlotMachine\net\Toby\GSM\Util\BackwardsCompatibility.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Util/Colours.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Util/Colours.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Display/Display.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Display/Display.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Util/FPS.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Util/FPS.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Util/FontRenderer.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Util/FontRenderer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Fruit.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Fruit.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Gamemodes.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Gamemodes.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/GlobalVariables.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/GlobalVariables.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Util/ImageRenderer.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Util/ImageRenderer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Util/ImageTransformer.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Util/ImageTransformer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Machine.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Machine.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Reels.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Reels.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Util/ResourceLoader.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Util/ResourceLoader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Util/SoundManager.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Util/SoundManager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/__init__.py" afterPath="$PROJECT_DIR$/net/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/__init__.py" afterPath="$PROJECT_DIR$/net/Toby/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/__init__.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Assets/__init__.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Assets/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Display/__init__.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Display/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/States/__init__.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/States/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/Toby/GSM/Util/__init__.py" afterPath="$PROJECT_DIR$/net/Toby/GSM/Util/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/graphicalSlotMachine.iml" afterPath="$PROJECT_DIR$/.idea/graphicalSlotMachine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="graphicalSlotMachine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,31 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Display.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Display/Display.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gamemodes.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Gamemodes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46401986" vertical-offset="0" max-vertical-offset="403">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageTransformer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImageTransformer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/ImageTransformer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="476">
-              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.4264214" vertical-offset="0" max-vertical-offset="598">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -129,11 +77,11 @@
         <option value="$PROJECT_DIR$/net/Toby/GSM/Reels.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/GlobalVariables.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Fruit.py" />
-        <option value="$PROJECT_DIR$/net/Toby/GSM/Machine.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Util/FontRenderer.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Display/Display.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Util/ImageTransformer.py" />
         <option value="$PROJECT_DIR$/net/Toby/GSM/Gamemodes.py" />
+        <option value="$PROJECT_DIR$/net/Toby/GSM/Machine.py" />
       </list>
     </option>
   </component>
@@ -143,7 +91,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1320" />
+    <option name="width" value="1318" />
     <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -680,30 +628,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1318" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18282989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35164836" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41877636" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3125997" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18015873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39761093" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3125997" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.318569" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1073,13 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="3893">
-          <caret line="152" column="41" selection-start-line="152" selection-start-column="41" selection-end-line="152" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/FontRenderer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5867621" vertical-offset="420" max-vertical-offset="1904">
@@ -1102,26 +1043,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Gamemodes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.312187" vertical-offset="0" max-vertical-offset="599">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Display/Display.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state vertical-scroll-proportion="0.48247078" vertical-offset="0" max-vertical-offset="599">
           <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33277592" vertical-offset="209" max-vertical-offset="3604">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Util/ImageTransformer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="476">
-          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/net/Toby/GSM/Gamemodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46401986" vertical-offset="0" max-vertical-offset="403">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.4264214" vertical-offset="0" max-vertical-offset="598">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>

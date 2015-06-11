@@ -175,10 +175,10 @@ class fruitMachine():
                                                255),
                                               None, rotation=0, size=42)
                 ResourceLoader.font.render_to(Display.screen, (5, 5), ("Credits: " + str(self.credits)),
-                                          (random.randint(0, 255),
-                                           random.randint(0, 255),
-                                           random.randint(0, 255), 255),
-                                           None, rotation=0, size=72)
+                                              (random.randint(0, 255),
+                                               random.randint(0, 255),
+                                               random.randint(0, 255), 255),
+                                              None, rotation=0, size=72)
 
             if GlobalVariables.verMinor == 3:
 
