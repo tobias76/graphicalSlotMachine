@@ -1,9 +1,8 @@
-import pygame
-
 import random
 
-import net.Toby.GSM.Gamemodes as Gamemodes
+import pygame
 
+import net.Toby.GSM.Gamemodes as Gamemodes
 from net.Toby.GSM.Display import Display
 from net.Toby.GSM.Util import ResourceLoader
 from net.Toby.GSM.Util import ImageTransformer

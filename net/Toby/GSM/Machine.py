@@ -18,6 +18,7 @@ from net.Toby.GSM.Display import Display as Display
 from net.Toby.GSM.Util import FontRenderer as FontRenderer
 from net.Toby.GSM.Util import ImageRenderer as ImageRenderer
 from net.Toby.GSM import GlobalVariables as GlobalVariables
+from net.Toby.GSM.Util.System import SystemUtils as System
 
 pygame.init()
 
@@ -37,6 +38,7 @@ reel3 = Reels.Reel(reelGroup3, 3)
 SoundManager = SoundManager.SoundManager()
 FontRenderer = FontRenderer.FontRenderer()
 ImageRenderer = ImageRenderer.ImageRenderer()
+system = System.system()
 
 
 class fruitMachine():
@@ -60,8 +62,7 @@ class fruitMachine():
             for event in pygame.event.get():
                 # This sets up a quit event
                 if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
+                    system.quitCompletely()
             # This is a list of the keys pressed
             self.keys = pygame.key.get_pressed()
             # This says if you press J to start the slot machine
@@ -69,8 +70,7 @@ class fruitMachine():
                 self.fruitMachine()
             # This sets escape to quit the game
             if self.keys[K_ESCAPE]:
-                pygame.quit()
-                sys.exit()
+                system.quitCompletely()
             # This ticks the fps clock and updates the display
             FPS.fpsClock.tick(FPS.fps)
             pygame.display.update()
@@ -80,8 +80,7 @@ class fruitMachine():
             # This sets up a quit event
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
+                    system.quitCompletely()
             # This is a list of the keys pressed
             self.keys = pygame.key.get_pressed()
             # This says that if you press F and the reels aren't moving to remove one credit and set them to the moving
@@ -209,11 +208,9 @@ class fruitMachine():
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
+                    system.quitCompletely()
                 if self.keys[K_ESCAPE]:
-                    pygame.quit()
-                    sys.exit()
+                    system.quitCompletely()
 
             self.keys = pygame.key.get_pressed()
             if self.keys[K_j]:
